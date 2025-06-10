@@ -1,3 +1,5 @@
+let editor;
+
 /* ----- NAVIGATION BAR FUNCTION ----- */
 function myMenuFunction() {
   var menuBtn = document.getElementById("myNavMenu");
@@ -188,16 +190,16 @@ function createProjectCards() {
       link.target = '_blank';
       link.innerHTML = `View Project on GitHub`;
       cardContent.appendChild(link);
-  }
-  
-  if (project.youtubeLink) {
+    }
+
+    if (project.youtubeLink) {
       const youtubeLink = document.createElement('a');
       youtubeLink.classList.add('project-link');
       youtubeLink.href = project.youtubeLink;
       youtubeLink.target = '_blank';
       youtubeLink.innerHTML = `Watch Project on YouTube`;
       cardContent.appendChild(youtubeLink);
-  }
+    }
 
     card.appendChild(cardHeader);
     card.appendChild(cardContent);

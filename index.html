@@ -12,6 +12,9 @@
 
     <!-- --------- CSS ---------- -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/45.0.0/ckeditor5.css" crossorigin>
+    <link rel="stylesheet"
+        href="https://cdn.ckeditor.com/ckeditor5-premium-features/45.0.0/ckeditor5-premium-features.css" crossorigin>
 
     <!-- --------- FAVICON ---------- -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
@@ -44,7 +47,7 @@
             </div>
             <div class="nav-button">
                 <button class="btn" type="submit"
-                    onclick="window.open('docs/Cristina Rodriguez Resume-2024-1.pdf')">Download CV <i
+                    onclick="window.open('docs/Cristina Rodriguez Resume-2025-FV.pdf')">Download CV <i
                         class="uil uil-file-alt"></i></button>
             </div>
             <div class="nav-menu-btn">
@@ -73,7 +76,7 @@
                     <div class="featured-text-btn">
                         <button class="btn blue-btn" onclick="sendEmail()">Hire Me</button>
                         <button class="btn" type="submit"
-                            onclick="window.open('docs/Cristina Rodriguez Resume-2024-1.pdf')">Download CV <i
+                            onclick="window.open('docs/Cristina Rodriguez Resume-2025-FV.pdf')">Download CV <i
                                 class="uil uil-file-alt"></i></button>
                     </div>
                     <div class="social_icons">
@@ -92,70 +95,6 @@
                     </div>
                 </div>
             </section>
-            <!-- -------------- ABOUT BOX ---------------- -->
-            <section class="section" id="about">
-                <div class="top-header">
-                    <h1>About Me</h1>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="about-info">
-                            <h3>My introduction</h3>
-                            <p>Hello! I'm a project-driven software engineer with a strong focus on developing technical
-                                curricula and fostering interactive learning. My expertise lies in full-stack
-                                development, where I proficiently use technologies such as JavaScript, Python, Java, and
-                                React Native. Over the last three years, I've been instrumental in enhancing the
-                                curriculum at Techtonica.org, leveraging educational technology and adult learning
-                                theories. My contributions in technical JavaScript and Data Structures and Algorithms
-                                workshops have significantly increased qualified applicants by 89% and seen over 52
-                                participants successfully graduate.
-                            </p>
-                            <div class="about-btn">
-                                <button class="btn" type="submit"
-                                    onclick="window.open('docs/Cristina Rodriguez Resume-2024-1.pdf')">Download CV <i
-                                        class="uil uil-import"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="skills-box">
-                            <div class="skills-header">
-                                <h3>Frontend</h3>
-                            </div>
-                            <div class="skills-list">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                                <span>React</span>
-                                <span>React Native</span>
-                                <span>Next.js</span>
-                                <span>Vite</span>
-                            </div>
-                        </div>
-                        <div class="skills-box">
-                            <div class="skills-header">
-                                <h3>Backend</h3>
-                            </div>
-                            <div class="skills-list">
-                                <span>JAVA</span>
-                                <span>Python</span>
-                                <span>DSA</span>
-                                <span>Node.js</span>
-                            </div>
-                        </div>
-                        <div class="skills-box">
-                            <div class="skills-header">
-                                <h3>Database</h3>
-                            </div>
-                            <div class="skills-list">
-                                <span>PostgreSQL</span>
-                                <span>MongoDB</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <!-- -------------- EDUCATIONAL PROJECT BOX ---------------- -->
             <section class="projects-section">
                 <div class="container">
@@ -225,6 +164,39 @@
                                 target="_blank">Club Sandwich</a></h3>
                         <label>I'm grabbing information from an API with more than 20 sandwich's recipes and list
                             them</label>
+                    </div>
+                </div>
+                <!-- -------------- CAREER CHATBOT SECTION ---------------- -->
+                <div class="chatbot-showcase">
+                    <div class="chatbot-header">
+                        <h2>🤖 Ask Me Anything Chatbot 🤖</h2>
+                        <p>An interactive AI assistant that knows all about my professional journey, technical skills, and project experience. Ask it questions about my background in software development, curriculum design, or any of my projects. Built with Hugging Face Transformers.</p>
+                    </div>
+                    
+                    <div class="tech-stack">
+                        <span class="tech-tag">AI/ML</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Hugging Face</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Transformers</span>
+                    </div>
+
+                    <div class="iframe-container">
+                        <div class="loading-message">Loading Career Chatbot...</div>
+                        <iframe 
+                            src="https://hf.co/embed/ECRodriguez/career_chatbot"
+                            title="Career Chatbot"
+                            width="100%" 
+                            height="100%"
+                            frameborder="0"
+                            scrolling="no">
+                        </iframe>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://huggingface.co/spaces/ECRodriguez/career_chatbot" target="_blank">
+                            View on Hugging Face →
+                        </a>
                     </div>
                 </div>
             </section>

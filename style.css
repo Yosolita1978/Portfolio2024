@@ -1,5 +1,6 @@
 /* ----- POPPINS FONT Link ----- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* ----- VARIABLES ----- */
 :root{
@@ -438,6 +439,177 @@ footer{
     margin-top: 10px;
 }
 
+
+/* ----- EDUCATIONAL PROJECTS SECTION ----- */
+.projects-section {
+    padding: 3rem 1rem;
+    background-color: var(--body-color);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: var(--text-color-third);
+}
+
+/* ----- EDUCATIONAL PROJECTS SECTION ----- */
+.contact-section {
+	font-family: 'Lato';
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* ========== CHATBOT SHOWCASE STYLES ========== */
+.chatbot-showcase {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 1200px;
+    border: 1px solid #e1e5e9;
+}
+
+.chatbot-header h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.chatbot-header p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.7;
+    text-align: center;
+    margin-bottom: 25px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tech-stack {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.tech-tag {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.2);
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    border: 2px solid #e1e5e9;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    background: #f8f9fa;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.loading-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #666;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.project-links a {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.project-links a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+    .chatbot-showcase {
+        padding: 25px;
+        margin: 20px 10px;
+    }
+
+    .chatbot-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .chatbot-header p {
+        font-size: 1rem;
+    }
+
+    .iframe-container {
+        height: 500px;
+    }
+
+    .project-links a {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .chatbot-showcase {
+        padding: 20px;
+    }
+
+    .chatbot-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .iframe-container {
+        height: 400px;
+    }
+
+    .tech-stack {
+        gap: 8px;
+    }
+
+    .tech-tag {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
 
 /* ----- EDUCATIONAL PROJECTS SECTION ----- */
 .projects-section {
