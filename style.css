@@ -48,7 +48,6 @@ html{
     background: #bbb;
 }
 
-
 /* ---##-- REUSABLE CSS --##--- */
 
 /* ----- GLOBAL BUTTON DESIGN ----- */
@@ -60,6 +59,12 @@ html{
     border-radius: 10px;
     cursor: pointer;
     transition: .4s;
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 .btn>i{
     margin-left: 10px;
@@ -78,6 +83,7 @@ i{
 /* ------- BASE -------- */
 body{
     background: var(--body-color);
+    overflow-x: hidden;
 }
 .container{
     width: 100%;
@@ -123,8 +129,11 @@ nav{
     text-decoration: none;
     color: var(--text-color-second);
     font-weight: 500;
-    padding-inline: 15px;
+    padding: 10px 15px;
     margin-inline: 20px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
 }
 .nav-menu-btn{
     display: none;
@@ -132,6 +141,12 @@ nav{
 .nav-menu-btn i{
     font-size: 28px;
     cursor: pointer;
+    padding: 10px;
+    min-height: 44px;
+    min-width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .active-link{
     position: relative;
@@ -149,7 +164,6 @@ nav{
     background: var(--first-color);
     border-radius: 50%;
 }
-
 
 /* ----- WRAPPER DESIGN ----- */
 .wrapper{
@@ -196,10 +210,12 @@ nav{
     font-size: 15px;
     margin-bottom: 30px;
     color: var(--text-color-second);
+    line-height: 1.6;
 }
 .featured-text-btn{
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 .featured-text-btn>.blue-btn{
     background: var(--first-color);
@@ -217,8 +233,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
@@ -389,6 +405,11 @@ h3{
 .project-box a{
     text-decoration: none;
     color: var(--text-color-third);
+    padding: 8px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-box label{
@@ -397,12 +418,14 @@ h3{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     margin-bottom: 1.5rem;
+    text-align: center;
+    line-height: 1.4;
 } 
 
 img.half-size {
     transform: scale(0.3);
     margin: 0;
-  }
+}
 
 /* ----- FOOTER BOX ----- */
 footer{
@@ -429,6 +452,10 @@ footer{
     color: var(--text-color-second);
     font-weight: 500;
     margin-inline: 20px;
+    padding: 10px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
 }
 .footer-social-icons{
     display: flex;
@@ -437,8 +464,8 @@ footer{
 .bottom-footer{
     font-size: 14px;
     margin-top: 10px;
+    text-align: center;
 }
-
 
 /* ----- EDUCATIONAL PROJECTS SECTION ----- */
 .projects-section {
@@ -461,6 +488,7 @@ footer{
 	margin-left: auto;
 	margin-right: auto;
 }
+
 /* ========== CHATBOT SHOWCASE STYLES ========== */
 .chatbot-showcase {
     background: #fff;
@@ -556,73 +584,12 @@ footer{
     font-size: 1.1rem;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    min-height: 44px;
 }
 
 .project-links a:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
-}
-
-/* ========== RESPONSIVE DESIGN ========== */
-@media (max-width: 768px) {
-    .chatbot-showcase {
-        padding: 25px;
-        margin: 20px 10px;
-    }
-
-    .chatbot-header h2 {
-        font-size: 1.8rem;
-    }
-
-    .chatbot-header p {
-        font-size: 1rem;
-    }
-
-    .iframe-container {
-        height: 500px;
-    }
-
-    .project-links a {
-        padding: 12px 24px;
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .chatbot-showcase {
-        padding: 20px;
-    }
-
-    .chatbot-header h2 {
-        font-size: 1.5rem;
-    }
-
-    .iframe-container {
-        height: 400px;
-    }
-
-    .tech-stack {
-        gap: 8px;
-    }
-
-    .tech-tag {
-        padding: 6px 12px;
-        font-size: 0.8rem;
-    }
-}
-
-/* ----- EDUCATIONAL PROJECTS SECTION ----- */
-.projects-section {
-    padding: 3rem 1rem;
-    background-color: var(--body-color);
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    font-weight: 600;
-    color: var(--text-color-third);
 }
 
 /* Card Grid Styles */
@@ -676,6 +643,7 @@ footer{
 .card-description {
     margin-top: 0.5rem;
     color: var(--text-color-second);
+    line-height: 1.5;
 }
 
 /* Badge Styles */
@@ -699,6 +667,8 @@ footer{
     align-items: center;
     gap: 0.3rem;
     transition: color 0.3s;
+    padding: 8px;
+    min-height: 44px;
 }
 
 .project-link:hover {
@@ -706,15 +676,20 @@ footer{
     text-decoration: underline;
 }
 
-
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px){
+    .wrapper{
+        padding-inline: 6vw;
+    }
     .featured-text{
         padding: 0;
     }
     .image, .image img{
         width: 320px;
         height: 320px;
+    }
+    .nav{
+        padding-inline: 6vw;
     }
 }
 
@@ -733,7 +708,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: rgba(255, 255, 255, 0.7);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(20px);
         width: 100%;
         min-height: 450px;
@@ -742,6 +717,11 @@ footer{
     }
     .nav_menu_list{
         flex-direction: column;
+        gap: 20px;
+    }
+    .nav-link{
+        font-size: 18px;
+        padding: 15px 20px;
     }
     .nav-menu-btn{
         display: flex;
@@ -794,22 +774,399 @@ footer{
     .project-box{
         width: 80%;
     }
+}
 
+/* ----- MEDIA QUERY == 768px / RESPONSIVE ----- */
+@media only screen and (max-width: 768px) {
+    .wrapper{
+        padding-inline: 4vw;
+    }
+    nav{
+        padding-inline: 4vw;
+    }
+    .featured-name{
+        font-size: 42px;
+    }
+    .featured-text-info{
+        font-size: 14px;
+    }
+    .section{
+        padding-block: 3em;
+    }
+    .top-header{
+        margin-bottom: 3em;
+    }
+    .top-header h1{
+        font-size: 28px;
+    }
+    .section-title{
+        font-size: 1.8rem;
+    }
+    .chatbot-showcase {
+        padding: 30px 20px;
+        margin: 20px 10px;
+    }
+    .chatbot-header h2 {
+        font-size: 1.9rem;
+    }
+    .iframe-container {
+        height: 500px;
+    }
+    .project-links a {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+    .footer-social-icons{
+        gap: 20px;
+    }
 }
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
-
 @media only screen and (max-width: 540px){
+    .wrapper{
+        padding-inline: 5vw;
+    }
+    nav{
+        padding-inline: 5vw;
+        height: 70px;
+        line-height: 70px;
+    }
+    .nav-name{
+        font-size: 24px;
+    }
     .featured-name{
-        font-size: 40px;
+        font-size: 36px;
+        margin-block: 15px;
+    }
+    .featured-text-info{
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .featured-text-btn{
+        gap: 15px;
+    }
+    .btn{
+        padding: 10px 16px;
+        font-size: 14px;
     }
     .project-box{
         width: 100%;
+        height: auto;
+        min-height: 280px;
+        padding: 20px 15px;
+    }
+    .project-box h3{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .project-box label{
+        font-size: 14px;
+        margin: 10px;
     }
     .form-inputs{
         flex-direction: column;
     }
     .input-field{
         width: 100%;
+    }
+    .social_icons{
+        gap: 20px;
+        margin-top: 3em;
+    }
+    .icon{
+        width: 44px;
+        height: 44px;
+    }
+    .top-header h1{
+        font-size: 24px;
+    }
+    .section-title{
+        font-size: 1.6rem;
+    }
+    .chatbot-showcase {
+        padding: 20px 15px;
+        margin: 15px 5px;
+    }
+    .chatbot-header h2 {
+        font-size: 1.6rem;
+    }
+    .chatbot-header p {
+        font-size: 1rem;
+    }
+    .iframe-container {
+        height: 450px;
+    }
+    .tech-stack {
+        gap: 8px;
+    }
+    .tech-tag {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    .project-links a {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    .footer-social-icons{
+        gap: 15px;
+    }
+    .footer_menu_list a{
+        margin-inline: 10px;
+        font-size: 14px;
+    }
+    .top-footer p{
+        font-size: 20px;
+    }
+    .bottom-footer{
+        font-size: 12px;
+        padding: 0 10px;
+    }
+}
+
+/* ----- MEDIA QUERY == 480px / RESPONSIVE ----- */
+@media only screen and (max-width: 480px) {
+    .wrapper{
+        padding-inline: 4vw;
+    }
+    nav{
+        padding-inline: 4vw;
+        height: 65px;
+        line-height: 65px;
+    }
+    .nav-name{
+        font-size: 22px;
+    }
+    .featured-box{
+        min-height: 600px;
+    }
+    .featured-name{
+        font-size: 32px;
+        text-align: center;
+    }
+    .featured-text-info{
+        font-size: 13px;
+        text-align: center;
+    }
+    .featured-text-btn{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .btn{
+        padding: 10px 14px;
+        font-size: 13px;
+        flex: 1;
+        min-width: 120px;
+    }
+    .social_icons{
+        justify-content: center;
+        margin-top: 2em;
+    }
+    .section{
+        padding-block: 2.5em;
+    }
+    .top-header h1{
+        font-size: 22px;
+    }
+    .section-title{
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+    .project-box{
+        min-height: 250px;
+        padding: 15px 10px;
+    }
+    .project-box h3{
+        font-size: 16px;
+    }
+    .project-box label{
+        font-size: 13px;
+    }
+    .chatbot-showcase {
+        padding: 15px 10px;
+        margin: 10px 5px;
+    }
+    .chatbot-header h2 {
+        font-size: 1.4rem;
+    }
+    .iframe-container {
+        height: 400px;
+    }
+    .project-links a {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+    .card {
+        padding: 0.8rem;
+    }
+    .card-title {
+        font-size: 1.1rem;
+    }
+    .card-description {
+        font-size: 0.9rem;
+    }
+}
+
+/* ----- MEDIA QUERY == 375px / RESPONSIVE ----- */
+@media only screen and (max-width: 375px) {
+    .wrapper{
+        padding-inline: 3vw;
+    }
+    nav{
+        padding-inline: 3vw;
+        height: 60px;
+        line-height: 60px;
+    }
+    .nav-name{
+        font-size: 20px;
+    }
+    .featured-name{
+        font-size: 28px;
+    }
+    .featured-text-info{
+        font-size: 12px;
+    }
+    .btn{
+        padding: 8px 12px;
+        font-size: 12px;
+        min-width: 100px;
+    }
+    .section{
+        padding-block: 2em;
+    }
+    .top-header h1{
+        font-size: 20px;
+    }
+    .section-title{
+        font-size: 1.3rem;
+    }
+    .project-box{
+        min-height: 220px;
+        padding: 12px 8px;
+    }
+    .project-box h3{
+        font-size: 15px;
+    }
+    .project-box label{
+        font-size: 12px;
+        margin: 8px;
+    }
+    .chatbot-showcase {
+        padding: 12px 8px;
+        margin: 8px 3px;
+    }
+    .chatbot-header h2 {
+        font-size: 1.2rem;
+    }
+    .chatbot-header p {
+        font-size: 0.9rem;
+    }
+    .iframe-container {
+        height: 350px;
+    }
+    .tech-tag {
+        padding: 4px 8px;
+        font-size: 0.75rem;
+    }
+    .project-links a {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    .footer_menu_list a{
+        margin-inline: 5px;
+        font-size: 13px;
+    }
+    .top-footer p{
+        font-size: 18px;
+    }
+    .bottom-footer{
+        font-size: 11px;
+    }
+}
+
+/* ----- MEDIA QUERY == 320px / RESPONSIVE ----- */
+@media only screen and (max-width: 320px) {
+    .wrapper{
+        padding-inline: 2vw;
+    }
+    nav{
+        padding-inline: 2vw;
+    }
+    .nav-name{
+        font-size: 18px;
+    }
+    .featured-name{
+        font-size: 24px;
+    }
+    .featured-text-info{
+        font-size: 11px;
+    }
+    .btn{
+        padding: 6px 10px;
+        font-size: 11px;
+        min-width: 90px;
+    }
+    .featured-text-btn{
+        gap: 8px;
+    }
+    .social_icons{
+        gap: 12px;
+    }
+    .icon{
+        width: 40px;
+        height: 40px;
+    }
+    .section{
+        padding-block: 1.5em;
+    }
+    .top-header{
+        margin-bottom: 2em;
+    }
+    .top-header h1{
+        font-size: 18px;
+    }
+    .section-title{
+        font-size: 1.2rem;
+    }
+    .project-box{
+        min-height: 200px;
+        padding: 10px 6px;
+    }
+    .project-box h3{
+        font-size: 14px;
+    }
+    .project-box label{
+        font-size: 11px;
+        margin: 6px;
+    }
+    .chatbot-showcase {
+        padding: 10px 6px;
+        margin: 6px 2px;
+    }
+    .chatbot-header h2 {
+        font-size: 1.1rem;
+    }
+    .chatbot-header p {
+        font-size: 0.85rem;
+    }
+    .iframe-container {
+        height: 300px;
+    }
+    .project-links a {
+        padding: 5px 10px;
+        font-size: 0.75rem;
+    }
+    .card {
+        padding: 0.6rem;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    .card-description {
+        font-size: 0.8rem;
+    }
+    .badge {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.5rem;
     }
 }
