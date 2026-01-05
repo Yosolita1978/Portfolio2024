@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Detraquee - A Harry Potter Podfic</title>
+    <link>https://archive.org/details/detraquee-podfic</link>
+    <description>Podfic of Detraquee by Hystaracal, read by Karma_Cookie. A Harry Potter fanfic: "All her growth was the conveying of a corpse of hope." (From 'The Rainbow' D.H. Lawrence) It was definitely the worst of times. Follow Hermione as she navigates through the quagmire: saving the world, getting top grades, falling in love, lust and a whole lot of trouble; and comes out of it hopefully at least partially sane.</description>
+    <language>en</language>
+    <itunes:author>Written by Hystaracal, Read by Karma_Cookie</itunes:author>
+    <itunes:summary>Podfic of Detraquee by Hystaracal, read by Karma_Cookie. A Hermione Granger-centric Harry Potter fanfic spanning Half-Blood Prince through Post-War.</itunes:summary>
+    <itunes:image href="https://ia601500.us.archive.org/27/items/detraquee-podfic/IMG_4302.jpeg"/>
+    <itunes:category text="Arts">
+      <itunes:category text="Books"/>
+    </itunes:category>
+    <itunes:explicit>no</itunes:explicit>
+    <atom:link href="https://www.yosola.co/podfic/detraquee.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://ia601500.us.archive.org/27/items/detraquee-podfic/IMG_4302.jpeg</url>
+      <title>Detraquee - A Harry Potter Podfic</title>
+      <link>https://archive.org/details/detraquee-podfic</link>
+    </image>
+
+    <item>
+      <title>Chapter 1</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20001.m4a" length="22334054" type="audio/mp4"/>
+      <guid>detraquee-ch-001</guid>
+      <itunes:episode>1</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 2</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20002.m4a" length="28101836" type="audio/mp4"/>
+      <guid>detraquee-ch-002</guid>
+      <itunes:episode>2</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 3</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20003.m4a" length="25690112" type="audio/mp4"/>
+      <guid>detraquee-ch-003</guid>
+      <itunes:episode>3</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 4</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20004.m4a" length="30303846" type="audio/mp4"/>
+      <guid>detraquee-ch-004</guid>
+      <itunes:episode>4</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 5</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20005.m4a" length="27052646" type="audio/mp4"/>
+      <guid>detraquee-ch-005</guid>
+      <itunes:episode>5</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 6</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20006.m4a" length="36490035" type="audio/mp4"/>
+      <guid>detraquee-ch-006</guid>
+      <itunes:episode>6</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 7</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20007.m4a" length="24956518" type="audio/mp4"/>
+      <guid>detraquee-ch-007</guid>
+      <itunes:episode>7</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 8</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20008.m4a" length="35965542" type="audio/mp4"/>
+      <guid>detraquee-ch-008</guid>
+      <itunes:episode>8</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 9</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20009.m4a" length="30722867" type="audio/mp4"/>
+      <guid>detraquee-ch-009</guid>
+      <itunes:episode>9</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 10</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20010.m4a" length="13316505" type="audio/mp4"/>
+      <guid>detraquee-ch-010</guid>
+      <itunes:episode>10</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 11</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20011.m4a" length="54631629" type="audio/mp4"/>
+      <guid>detraquee-ch-011</guid>
+      <itunes:episode>11</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 12</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20012.m4a" length="35651584" type="audio/mp4"/>
+      <guid>detraquee-ch-012</guid>
+      <itunes:episode>12</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 13</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20013.m4a" length="31457280" type="audio/mp4"/>
+      <guid>detraquee-ch-013</guid>
+      <itunes:episode>13</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 14</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20014.m4a" length="27576729" type="audio/mp4"/>
+      <guid>detraquee-ch-014</guid>
+      <itunes:episode>14</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 15</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20015.m4a" length="27367014" type="audio/mp4"/>
+      <guid>detraquee-ch-015</guid>
+      <itunes:episode>15</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 16</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20016.m4a" length="45393879" type="audio/mp4"/>
+      <guid>detraquee-ch-016</guid>
+      <itunes:episode>16</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 17</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20017.m4a" length="51275366" type="audio/mp4"/>
+      <guid>detraquee-ch-017</guid>
+      <itunes:episode>17</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 18</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20018.m4a" length="39845888" type="audio/mp4"/>
+      <guid>detraquee-ch-018</guid>
+      <itunes:episode>18</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 19</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20019.m4a" length="40055603" type="audio/mp4"/>
+      <guid>detraquee-ch-019</guid>
+      <itunes:episode>19</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 20</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20020.m4a" length="59560346" type="audio/mp4"/>
+      <guid>detraquee-ch-020</guid>
+      <itunes:episode>20</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 21</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20021.m4a" length="56099635" type="audio/mp4"/>
+      <guid>detraquee-ch-021</guid>
+      <itunes:episode>21</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 22</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20022.m4a" length="44665651" type="audio/mp4"/>
+      <guid>detraquee-ch-022</guid>
+      <itunes:episode>22</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 23</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20023.m4a" length="32822067" type="audio/mp4"/>
+      <guid>detraquee-ch-023</guid>
+      <itunes:episode>23</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 24</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20024.m4a" length="17930035" type="audio/mp4"/>
+      <guid>detraquee-ch-024</guid>
+      <itunes:episode>24</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 25</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20025.m4a" length="33870438" type="audio/mp4"/>
+      <guid>detraquee-ch-025</guid>
+      <itunes:episode>25</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 26</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20026.m4a" length="26947788" type="audio/mp4"/>
+      <guid>detraquee-ch-026</guid>
+      <itunes:episode>26</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 27</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20027.m4a" length="27576729" type="audio/mp4"/>
+      <guid>detraquee-ch-027</guid>
+      <itunes:episode>27</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 28</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20028.m4a" length="34710118" type="audio/mp4"/>
+      <guid>detraquee-ch-028</guid>
+      <itunes:episode>28</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 29</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20029.m4a" length="41205964" type="audio/mp4"/>
+      <guid>detraquee-ch-029</guid>
+      <itunes:episode>29</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 30</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20030.m4a" length="35337625" type="audio/mp4"/>
+      <guid>detraquee-ch-030</guid>
+      <itunes:episode>30</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 31</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20031.m4a" length="45184164" type="audio/mp4"/>
+      <guid>detraquee-ch-031</guid>
+      <itunes:episode>31</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 32</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20032.m4a" length="45813305" type="audio/mp4"/>
+      <guid>detraquee-ch-032</guid>
+      <itunes:episode>32</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 33</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20033.m4a" length="38587801" type="audio/mp4"/>
+      <guid>detraquee-ch-033</guid>
+      <itunes:episode>33</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 34</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20034.m4a" length="35232768" type="audio/mp4"/>
+      <guid>detraquee-ch-034</guid>
+      <itunes:episode>34</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 35</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20035.m4a" length="48234086" type="audio/mp4"/>
+      <guid>detraquee-ch-035</guid>
+      <itunes:episode>35</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 36</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20036.m4a" length="45708247" type="audio/mp4"/>
+      <guid>detraquee-ch-036</guid>
+      <itunes:episode>36</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 37</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20037%20A.m4a" length="49807360" type="audio/mp4"/>
+      <guid>detraquee-ch-037</guid>
+      <itunes:episode>37</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 37 - Interlude</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20037%20Interlude.m4a" length="19084083" type="audio/mp4"/>
+      <guid>detraquee-ch-037-interlude</guid>
+      <itunes:episode>38</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 38</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20038.m4a" length="59979366" type="audio/mp4"/>
+      <guid>detraquee-ch-038</guid>
+      <itunes:episode>39</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 39</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20039.m4a" length="58826137" type="audio/mp4"/>
+      <guid>detraquee-ch-039</guid>
+      <itunes:episode>40</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 40</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20040.m4a" length="48548044" type="audio/mp4"/>
+      <guid>detraquee-ch-040</guid>
+      <itunes:episode>41</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 41</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20041.m4a" length="54526771" type="audio/mp4"/>
+      <guid>detraquee-ch-041</guid>
+      <itunes:episode>42</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 42</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20042.m4a" length="45498532" type="audio/mp4"/>
+      <guid>detraquee-ch-042</guid>
+      <itunes:episode>43</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 43</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20043.m4a" length="65946009" type="audio/mp4"/>
+      <guid>detraquee-ch-043</guid>
+      <itunes:episode>44</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 44</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20044.m4a" length="68366336" type="audio/mp4"/>
+      <guid>detraquee-ch-044</guid>
+      <itunes:episode>45</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 45</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20045.m4a" length="57567641" type="audio/mp4"/>
+      <guid>detraquee-ch-045</guid>
+      <itunes:episode>46</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 46</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20046.m4a" length="67737395" type="audio/mp4"/>
+      <guid>detraquee-ch-046</guid>
+      <itunes:episode>47</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 47</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20047.m4a" length="35232768" type="audio/mp4"/>
+      <guid>detraquee-ch-047</guid>
+      <itunes:episode>48</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 48</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20048.m4a" length="40055603" type="audio/mp4"/>
+      <guid>detraquee-ch-048</guid>
+      <itunes:episode>49</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 49</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20049.m4a" length="44246630" type="audio/mp4"/>
+      <guid>detraquee-ch-049</guid>
+      <itunes:episode>50</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 50</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20050.m4a" length="35232768" type="audio/mp4"/>
+      <guid>detraquee-ch-050</guid>
+      <itunes:episode>51</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 51</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20051.m4a" length="19922944" type="audio/mp4"/>
+      <guid>detraquee-ch-051</guid>
+      <itunes:episode>52</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 52</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20052.m4a" length="60503449" type="audio/mp4"/>
+      <guid>detraquee-ch-052</guid>
+      <itunes:episode>53</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 53</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20053.m4a" length="47185920" type="audio/mp4"/>
+      <guid>detraquee-ch-053</guid>
+      <itunes:episode>54</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 54</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20054.m4a" length="50436505" type="audio/mp4"/>
+      <guid>detraquee-ch-054</guid>
+      <itunes:episode>55</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 55</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20055.m4a" length="42251878" type="audio/mp4"/>
+      <guid>detraquee-ch-055</guid>
+      <itunes:episode>56</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 56</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20056.m4a" length="38273843" type="audio/mp4"/>
+      <guid>detraquee-ch-056</guid>
+      <itunes:episode>57</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 57</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20057.m4a" length="37329715" type="audio/mp4"/>
+      <guid>detraquee-ch-057</guid>
+      <itunes:episode>58</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 58</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20058.m4a" length="56309350" type="audio/mp4"/>
+      <guid>detraquee-ch-058</guid>
+      <itunes:episode>59</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 59</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20059.m4a" length="46556979" type="audio/mp4"/>
+      <guid>detraquee-ch-059</guid>
+      <itunes:episode>60</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 60</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20060.m4a" length="62076518" type="audio/mp4"/>
+      <guid>detraquee-ch-060</guid>
+      <itunes:episode>61</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 61</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20061.m4a" length="61971660" type="audio/mp4"/>
+      <guid>detraquee-ch-061</guid>
+      <itunes:episode>62</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 62</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20062.m4a" length="70367232" type="audio/mp4"/>
+      <guid>detraquee-ch-062</guid>
+      <itunes:episode>63</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 63</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20063.m4a" length="63649587" type="audio/mp4"/>
+      <guid>detraquee-ch-063</guid>
+      <itunes:episode>64</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 64</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20064.m4a" length="84824678" type="audio/mp4"/>
+      <guid>detraquee-ch-064</guid>
+      <itunes:episode>65</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 65</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20065.m4a" length="39741030" type="audio/mp4"/>
+      <guid>detraquee-ch-065</guid>
+      <itunes:episode>66</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 66</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20066.m4a" length="63859302" type="audio/mp4"/>
+      <guid>detraquee-ch-066</guid>
+      <itunes:episode>67</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 67</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20067.m4a" length="30303846" type="audio/mp4"/>
+      <guid>detraquee-ch-067</guid>
+      <itunes:episode>68</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 68</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20068.m4a" length="69947801" type="audio/mp4"/>
+      <guid>detraquee-ch-068</guid>
+      <itunes:episode>69</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 69</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20069.m4a" length="67318374" type="audio/mp4"/>
+      <guid>detraquee-ch-069</guid>
+      <itunes:episode>70</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 70</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20070.m4a" length="89958195" type="audio/mp4"/>
+      <guid>detraquee-ch-070</guid>
+      <itunes:episode>71</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 71</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20071.m4a" length="89958195" type="audio/mp4"/>
+      <guid>detraquee-ch-071</guid>
+      <itunes:episode>72</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 72</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20072.m4a" length="71835648" type="audio/mp4"/>
+      <guid>detraquee-ch-072</guid>
+      <itunes:episode>73</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 73</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20073.m4a" length="48652902" type="audio/mp4"/>
+      <guid>detraquee-ch-073</guid>
+      <itunes:episode>74</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 74</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20074.m4a" length="82299494" type="audio/mp4"/>
+      <guid>detraquee-ch-074</guid>
+      <itunes:episode>75</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 75</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20075.m4a" length="71521689" type="audio/mp4"/>
+      <guid>detraquee-ch-075</guid>
+      <itunes:episode>76</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 76</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20076.m4a" length="121015091" type="audio/mp4"/>
+      <guid>detraquee-ch-076</guid>
+      <itunes:episode>77</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 77</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20077.m4a" length="95944704" type="audio/mp4"/>
+      <guid>detraquee-ch-077</guid>
+      <itunes:episode>78</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 78</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20078.m4a" length="98670387" type="audio/mp4"/>
+      <guid>detraquee-ch-078</guid>
+      <itunes:episode>79</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 79</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20079.m4a" length="79376794" type="audio/mp4"/>
+      <guid>detraquee-ch-079</guid>
+      <itunes:episode>80</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 80</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20080.m4a" length="78957773" type="audio/mp4"/>
+      <guid>detraquee-ch-080</guid>
+      <itunes:episode>81</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 81</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20081.m4a" length="77594624" type="audio/mp4"/>
+      <guid>detraquee-ch-081</guid>
+      <itunes:episode>82</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 82</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20082.m4a" length="46766694" type="audio/mp4"/>
+      <guid>detraquee-ch-082</guid>
+      <itunes:episode>83</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 83</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20083.m4a" length="67842611" type="audio/mp4"/>
+      <guid>detraquee-ch-083</guid>
+      <itunes:episode>84</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 84</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20084.m4a" length="62914560" type="audio/mp4"/>
+      <guid>detraquee-ch-084</guid>
+      <itunes:episode>85</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 85</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20085.m4a" length="77804339" type="audio/mp4"/>
+      <guid>detraquee-ch-085</guid>
+      <itunes:episode>86</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 86</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20086.m4a" length="119232716" type="audio/mp4"/>
+      <guid>detraquee-ch-086</guid>
+      <itunes:episode>87</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 87</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20087.m4a" length="118498304" type="audio/mp4"/>
+      <guid>detraquee-ch-087</guid>
+      <itunes:episode>88</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 88</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20088.m4a" length="104232755" type="audio/mp4"/>
+      <guid>detraquee-ch-088</guid>
+      <itunes:episode>89</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 89</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20089.m4a" length="90272153" type="audio/mp4"/>
+      <guid>detraquee-ch-089</guid>
+      <itunes:episode>90</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 90</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20090.m4a" length="87966105" type="audio/mp4"/>
+      <guid>detraquee-ch-090</guid>
+      <itunes:episode>91</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 91</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20091.m4a" length="40160461" type="audio/mp4"/>
+      <guid>detraquee-ch-091</guid>
+      <itunes:episode>92</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 92</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20092.m4a" length="153628057" type="audio/mp4"/>
+      <guid>detraquee-ch-092</guid>
+      <itunes:episode>93</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 93</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20093.m4a" length="57357926" type="audio/mp4"/>
+      <guid>detraquee-ch-093</guid>
+      <itunes:episode>94</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 94</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20094.m4a" length="96992281" type="audio/mp4"/>
+      <guid>detraquee-ch-094</guid>
+      <itunes:episode>95</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 95</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20095.m4a" length="37224857" type="audio/mp4"/>
+      <guid>detraquee-ch-095</guid>
+      <itunes:episode>96</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 96</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20096.m4a" length="122483507" type="audio/mp4"/>
+      <guid>detraquee-ch-096</guid>
+      <itunes:episode>97</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 97</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20097.m4a" length="117659443" type="audio/mp4"/>
+      <guid>detraquee-ch-097</guid>
+      <itunes:episode>98</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 98</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20098.m4a" length="60713164" type="audio/mp4"/>
+      <guid>detraquee-ch-098</guid>
+      <itunes:episode>99</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 99</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20099.m4a" length="20656947" type="audio/mp4"/>
+      <guid>detraquee-ch-099</guid>
+      <itunes:episode>100</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 100</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20100.m4a" length="52011008" type="audio/mp4"/>
+      <guid>detraquee-ch-100</guid>
+      <itunes:episode>101</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 101</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20101.m4a" length="89434112" type="audio/mp4"/>
+      <guid>detraquee-ch-101</guid>
+      <itunes:episode>102</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 102</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20102.m4a" length="125209190" type="audio/mp4"/>
+      <guid>detraquee-ch-102</guid>
+      <itunes:episode>103</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 103</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20103.m4a" length="64173670" type="audio/mp4"/>
+      <guid>detraquee-ch-103</guid>
+      <itunes:episode>104</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 104</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20104.m4a" length="88070963" type="audio/mp4"/>
+      <guid>detraquee-ch-104</guid>
+      <itunes:episode>105</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 105</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20105.m4a" length="95735398" type="audio/mp4"/>
+      <guid>detraquee-ch-105</guid>
+      <itunes:episode>106</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 106</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20106.m4a" length="94896537" type="audio/mp4"/>
+      <guid>detraquee-ch-106</guid>
+      <itunes:episode>107</itunes:episode>
+    </item>
+
+    <item>
+      <title>Chapter 107 (Final)</title>
+      <enclosure url="https://archive.org/download/detraquee-podfic/Detraquee%20Ch%20107.m4a" length="187988172" type="audio/mp4"/>
+      <guid>detraquee-ch-107</guid>
+      <itunes:episode>108</itunes:episode>
+    </item>
+
+  </channel>
+</rss>
