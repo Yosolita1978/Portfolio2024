@@ -2,6 +2,9 @@ const imageInput = document.getElementById('imageInput');
 const widthSlider = document.getElementById('widthSlider');
 const widthValue = document.getElementById('widthValue');
 const modeSelect = document.getElementById('modeSelect');
+const themeSelect = document.getElementById('themeSelect');
+const bgColor = document.getElementById('bgColor');
+const textColor = document.getElementById('textColor');
 const invertCheckbox = document.getElementById('invertCheckbox');
 const generateBtn = document.getElementById('generateBtn');
 const sourceCanvas = document.getElementById('sourceCanvas');
@@ -17,6 +20,15 @@ const RAMPS = {
     smooth: ' .,;:clodxkOKXNWM#@'
 };
 
+const THEMES = {
+    dark:     { bg: '#0d0d1a', text: '#e0e0e0' },
+    terminal: { bg: '#0a0a0a', text: '#00ff00' },
+    amber:    { bg: '#1a1200', text: '#ffb000' },
+    matrix:   { bg: '#000000', text: '#00ff41' },
+    light:    { bg: '#f5f5f5', text: '#1a1a1a' },
+    custom:   null
+};
+
 const FONT_SIZE = 10;
 const LINE_HEIGHT = 10;
 
@@ -24,6 +36,9 @@ let loadedImage = null;
 
 imageInput.addEventListener('change', handleImageUpload);
 widthSlider.addEventListener('input', updateWidthDisplay);
+themeSelect.addEventListener('change', applyTheme);
+bgColor.addEventListener('input', switchToCustom);
+textColor.addEventListener('input', switchToCustom);
 generateBtn.addEventListener('click', generate);
 downloadBtn.addEventListener('click', downloadPng);
 
@@ -41,6 +56,18 @@ function handleImageUpload(event) {
 
 function updateWidthDisplay() {
     widthValue.textContent = widthSlider.value;
+}
+
+function applyTheme() {
+    const theme = THEMES[themeSelect.value];
+    if (theme) {
+        bgColor.value = theme.bg;
+        textColor.value = theme.text;
+    }
+}
+
+function switchToCustom() {
+    themeSelect.value = 'custom';
 }
 
 function generate() {
@@ -96,10 +123,10 @@ function renderToCanvas(ascii, charWidth, charHeight) {
     outputCanvas.width = canvasWidth;
     outputCanvas.height = canvasHeight;
 
-    outputCtx.fillStyle = '#0d0d1a';
+    outputCtx.fillStyle = bgColor.value;
     outputCtx.fillRect(0, 0, canvasWidth, canvasHeight);
 
-    outputCtx.fillStyle = '#e0e0e0';
+    outputCtx.fillStyle = textColor.value;
     outputCtx.font = `${FONT_SIZE}px "Courier New", monospace`;
     outputCtx.textBaseline = 'top';
 
