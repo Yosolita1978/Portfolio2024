@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Art Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>ASCII Art Converter</h1>
+            <p>Transform any image into ASCII art. Nothing is saved — your image stays in your browser.</p>
+        </header>
+
+        <section class="controls">
+            <div class="control-group">
+                <label for="imageInput">Choose an image</label>
+                <input type="file" id="imageInput" accept="image/*">
+            </div>
+
+            <div class="control-group">
+                <label for="widthSlider">Width: <span id="widthValue">100</span> characters</label>
+                <input type="range" id="widthSlider" min="40" max="150" value="100">
+            </div>
+
+            <div class="control-group">
+                <label for="modeSelect">Style</label>
+                <select id="modeSelect">
+                    <option value="contrast">High Contrast</option>
+                    <option value="smooth">Smooth</option>
+                </select>
+            </div>
+
+            <div class="control-group checkbox-group">
+                <input type="checkbox" id="invertCheckbox" checked>
+                <label for="invertCheckbox">Invert (light text on dark background)</label>
+            </div>
+
+            <button id="generateBtn" disabled>Generate ASCII Art</button>
+        </section>
+
+        <section class="output">
+            <canvas id="sourceCanvas" hidden></canvas>
+            <canvas id="outputCanvas"></canvas>
+            <textarea id="asciiText" readonly placeholder="ASCII art will appear here..."></textarea>
+            <button id="downloadBtn" hidden>Download PNG</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made by <a href="https://www.yosola.co/" target="_blank" rel="noopener">Cristina @ yosola.co</a></p>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
