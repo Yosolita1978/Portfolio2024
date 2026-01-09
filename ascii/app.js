@@ -5,11 +5,13 @@ const modeSelect = document.getElementById('modeSelect');
 const themeSelect = document.getElementById('themeSelect');
 const bgColor = document.getElementById('bgColor');
 const textColor = document.getElementById('textColor');
+const equalizeCheckbox = document.getElementById('equalizeCheckbox');
 const invertCheckbox = document.getElementById('invertCheckbox');
 const generateBtn = document.getElementById('generateBtn');
 const sourceCanvas = document.getElementById('sourceCanvas');
 const outputCanvas = document.getElementById('outputCanvas');
 const asciiText = document.getElementById('asciiText');
+const copyBtn = document.getElementById('copyBtn');
 const downloadBtn = document.getElementById('downloadBtn');
 
 const sourceCtx = sourceCanvas.getContext('2d');
@@ -40,6 +42,7 @@ themeSelect.addEventListener('change', applyTheme);
 bgColor.addEventListener('input', switchToCustom);
 textColor.addEventListener('input', switchToCustom);
 generateBtn.addEventListener('click', generate);
+copyBtn.addEventListener('click', copyToClipboard);
 downloadBtn.addEventListener('click', downloadPng);
 
 function handleImageUpload(event) {
@@ -83,11 +86,54 @@ function generate() {
     const imageData = sourceCtx.getImageData(0, 0, charWidth, charHeight);
     const pixels = imageData.data;
 
+    if (equalizeCheckbox.checked) {
+        equalizeHistogram(pixels);
+    }
+
     const ascii = buildAsciiString(pixels, charWidth, charHeight);
     asciiText.value = ascii;
 
     renderToCanvas(ascii, charWidth, charHeight);
+    copyBtn.hidden = false;
     downloadBtn.hidden = false;
+}
+
+function equalizeHistogram(pixels) {
+    const histogram = new Array(256).fill(0);
+    const totalPixels = pixels.length / 4;
+
+    for (let i = 0; i < pixels.length; i += 4) {
+        const brightness = Math.floor(0.299 * pixels[i] + 0.587 * pixels[i + 1] + 0.114 * pixels[i + 2]);
+        histogram[brightness]++;
+    }
+
+    const cdf = new Array(256);
+    cdf[0] = histogram[0];
+    for (let i = 1; i < 256; i++) {
+        cdf[i] = cdf[i - 1] + histogram[i];
+    }
+
+    let cdfMin = 0;
+    for (let i = 0; i < 256; i++) {
+        if (cdf[i] > 0) {
+            cdfMin = cdf[i];
+            break;
+        }
+    }
+
+    const lookup = new Array(256);
+    for (let i = 0; i < 256; i++) {
+        lookup[i] = Math.round(((cdf[i] - cdfMin) / (totalPixels - cdfMin)) * 255);
+    }
+
+    for (let i = 0; i < pixels.length; i += 4) {
+        const brightness = Math.floor(0.299 * pixels[i] + 0.587 * pixels[i + 1] + 0.114 * pixels[i + 2]);
+        const scale = brightness > 0 ? lookup[brightness] / brightness : 1;
+
+        pixels[i] = Math.min(255, Math.floor(pixels[i] * scale));
+        pixels[i + 1] = Math.min(255, Math.floor(pixels[i + 1] * scale));
+        pixels[i + 2] = Math.min(255, Math.floor(pixels[i + 2] * scale));
+    }
 }
 
 function buildAsciiString(pixels, width, height) {
@@ -134,6 +180,16 @@ function renderToCanvas(ascii, charWidth, charHeight) {
     for (let i = 0; i < lines.length; i++) {
         outputCtx.fillText(lines[i], 0, i * LINE_HEIGHT);
     }
+}
+
+function copyToClipboard() {
+    navigator.clipboard.writeText(asciiText.value).then(function() {
+        const originalText = copyBtn.textContent;
+        copyBtn.textContent = 'Copied!';
+        setTimeout(function() {
+            copyBtn.textContent = originalText;
+        }, 2000);
+    });
 }
 
 function downloadPng() {

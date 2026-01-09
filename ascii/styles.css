@@ -233,6 +233,17 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.button-group {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.button-group button {
+    flex: 1;
+}
+
 @media (max-width: 600px) {
     .container {
         padding: 1rem;

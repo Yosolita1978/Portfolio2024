@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASCII Art Converter</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Plausible Analytics -->
+    <script defer data-domain="yosola.co" src="https://plausible.io/js/script.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTDXX5NWH2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-RTDXX5NWH2');
+    </script>
 </head>
 <body>
     <main class="container">
@@ -56,6 +68,11 @@
             </div>
 
             <div class="control-group checkbox-group">
+                <input type="checkbox" id="equalizeCheckbox">
+                <label for="equalizeCheckbox">Equalize (improve contrast)</label>
+            </div>
+
+            <div class="control-group checkbox-group">
                 <input type="checkbox" id="invertCheckbox" checked>
                 <label for="invertCheckbox">Invert (light text on dark background)</label>
             </div>
@@ -67,7 +84,10 @@
             <canvas id="sourceCanvas" hidden></canvas>
             <canvas id="outputCanvas"></canvas>
             <textarea id="asciiText" readonly placeholder="ASCII art will appear here..."></textarea>
-            <button id="downloadBtn" hidden>Download PNG</button>
+            <div class="button-group">
+                <button id="copyBtn" hidden>Copy ASCII</button>
+                <button id="downloadBtn" hidden>Download PNG</button>
+            </div>
         </section>
     </main>
 
