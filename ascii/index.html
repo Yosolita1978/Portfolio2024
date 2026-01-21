@@ -41,6 +41,9 @@
                 <select id="modeSelect">
                     <option value="contrast">High Contrast</option>
                     <option value="smooth">Smooth</option>
+                    <option value="minimal">Minimal</option>
+                    <option value="detailed">Detailed</option>
+                    <option value="blocks">Blocks (Unicode)</option>
                 </select>
             </div>
 
@@ -77,12 +80,26 @@
                 <label for="invertCheckbox">Invert (light text on dark background)</label>
             </div>
 
+            <div class="control-group checkbox-group">
+                <input type="checkbox" id="supersampleCheckbox">
+                <label for="supersampleCheckbox">Smooth edges (supersampling)</label>
+            </div>
+
             <button id="generateBtn" disabled>Generate ASCII Art</button>
         </section>
 
         <section class="output">
             <canvas id="sourceCanvas" hidden></canvas>
-            <canvas id="outputCanvas"></canvas>
+
+            <div class="comparison-container" hidden>
+                <canvas id="originalCanvas"></canvas>
+                <canvas id="outputCanvas"></canvas>
+                <div class="divider">
+                    <div class="divider-line"></div>
+                    <div class="divider-handle"></div>
+                </div>
+            </div>
+
             <textarea id="asciiText" readonly placeholder="ASCII art will appear here..."></textarea>
             <div class="button-group">
                 <button id="copyBtn" hidden>Copy ASCII</button>

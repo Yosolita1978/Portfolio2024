@@ -192,11 +192,87 @@ button:disabled {
     gap: 1.5rem;
 }
 
-#outputCanvas {
-    max-width: 100%;
+.comparison-container {
+    position: relative;
+    width: 100%;
     border: 1px solid #3a3a5a;
     border-radius: 4px;
-    background-color: #0d0d1a;
+    overflow: hidden;
+    user-select: none;
+}
+
+.comparison-container canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#originalCanvas {
+    position: relative;
+}
+
+#outputCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: inset(0 0 0 50%);
+}
+
+.divider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    cursor: ew-resize;
+    z-index: 10;
+}
+
+.divider-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background-color: #ffffff;
+}
+
+.divider-handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background-color: #7c3aed;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    cursor: ew-resize;
+}
+
+.divider-handle::before,
+.divider-handle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.divider-handle::before {
+    left: 6px;
+    border-width: 6px 6px 6px 0;
+    border-color: transparent #ffffff transparent transparent;
+}
+
+.divider-handle::after {
+    right: 6px;
+    border-width: 6px 0 6px 6px;
+    border-color: transparent transparent transparent #ffffff;
 }
 
 #asciiText {
@@ -260,5 +336,10 @@ footer a:hover {
 
     #asciiText {
         font-size: 0.6rem;
+    }
+
+    .divider-handle {
+        width: 32px;
+        height: 32px;
     }
 }
