@@ -17,7 +17,43 @@
         gtag('config', 'G-RTDXX5NWH2');
     </script>
 
-    <!-- --------- UNICONS ---------- -->
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Cristina Rodriguez",
+      "url": "https://www.yosola.co/",
+      "image": "https://www.yosola.co/images/profile.png",
+      "jobTitle": ["Technical Curriculum Developer", "Software Engineer"],
+      "description": "Technical Curriculum Developer & Software Engineer bridging complex engineering workflows and learner success. 4+ years in tech mentorship and workshops, 20+ years in project management and content creation.",
+      "email": "mailto:yosola@gmail.com",
+      "knowsAbout": [
+        "Technical Curriculum Development",
+        "Software Engineering",
+        "JavaScript",
+        "React",
+        "Next.js",
+        "Python",
+        "AI Training",
+        "Workshop Facilitation",
+        "Bilingual Content Creation",
+        "Mobile-First Design",
+        "Stable Diffusion",
+        "LangChain"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/crissrodriguez/",
+        "https://github.com/Yosolita1978",
+        "https://play.google.com/store/apps/developer?id=yosola",
+        "https://www.youtube.com/@crissrodriguez9940/videos"
+      ],
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.yosola.co/"
+      }
+    }
+    </script>
 
     <!-- --------- UNICONS ---------- -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
@@ -29,43 +65,6 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
     <title>Portfolio | Cristina Rodriguez</title>
-
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Cristina Rodriguez",
-          "url": "https://www.yosola.co/",
-          "image": "https://www.yosola.co/images/profile.png",
-          "jobTitle": ["Technical Curriculum Developer", "Software Engineer"],
-          "description": "Technical Curriculum Developer & Software Engineer bridging complex engineering workflows and learner success. 4+ years in tech mentorship and workshops, 20+ years in project management and content creation.",
-          "email": "mailto:yosola@gmail.com",
-          "knowsAbout": [
-            "Technical Curriculum Development",
-            "Software Engineering",
-            "JavaScript",
-            "React",
-            "Next.js",
-            "Python",
-            "AI Training",
-            "Workshop Facilitation",
-            "Bilingual Content Creation",
-            "Mobile-First Design",
-            "Stable Diffusion",
-            "LangChain"
-          ],
-          "sameAs": [
-            "https://www.linkedin.com/in/crissrodriguez/",
-            "https://github.com/Yosolita1978",
-            "https://play.google.com/store/apps/developer?id=yosola",
-            "https://www.youtube.com/@crissrodriguez9940/videos"
-          ],
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://www.yosola.co/"
-          }
-        }
-        </script>
 </head>
 
 <body>
@@ -86,6 +85,10 @@
                         <div class="circle"></div>
                     </li>
                     <li class="nav_list">
+                        <a href="#education" class="nav-link">Education</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
                         <a href="#projects" class="nav-link">Projects</a>
                         <div class="circle"></div>
                     </li>
@@ -97,7 +100,7 @@
             </div>
             <div class="nav-button">
                 <button class="btn" type="submit"
-                    onclick="window.open('docs/Cristina Rodriguez Resume-2025-FV.pdf')">Download CV <i
+                    onclick="window.open('docs/Cristina Rodriguez Resume-TCD-2026.pdf')">Download CV <i
                         class="uil uil-file-alt"></i></button>
             </div>
             <div class="nav-menu-btn">
@@ -126,7 +129,7 @@
                     <div class="featured-text-btn">
                         <button class="btn blue-btn" onclick="sendEmail()">Hire Me</button>
                         <button class="btn" type="submit"
-                            onclick="window.open('docs/Cristina Rodriguez Resume-2025-FV.pdf')">Download CV <i
+                            onclick="window.open('docs/Cristina Rodriguez Resume-TCD-2026.pdf')">Download CV <i
                                 class="uil uil-file-alt"></i></button>
                     </div>
                     <div class="social_icons">
@@ -146,7 +149,7 @@
                 </div>
             </section>
             <!-- -------------- EDUCATIONAL PROJECT BOX ---------------- -->
-            <section class="projects-section">
+            <section class="projects-section" id="education">
                 <div class="container">
                     <h2 class="section-title">Educational Projects</h2>
                     <div id="projects-grid" class="grid"></div>
@@ -161,59 +164,46 @@
                 </div>
                 <div class="project-container">
                     <div class="project-box">
-                        <a href="https://sustainability-training-ai.onrender.com/app" target="_blank">
-                            <img src="images/recepies.png" class="half-size" />
+                        <a href="https://www.yosola.co/ascii/" target="_blank">
+                            <img src="images/ascii.png" class="half-size" />
                         </a>
-                        <h3><a href="https://sustainability-training-ai.onrender.com/app" target="_blank">AI-Powered Sustentability Training </a></h3>
-                        <label>Get personalized training on compliant sustainability messaging </label>
+                        <h3><a href="https://www.yosola.co/ascii/" target="_blank">ASCII Art Converter</a></h3>
+                        <label>A lightweight web tool that converts images into ASCII art with multiple themes and export options</label>
                     </div>
                     <div class="project-box">
                         <a href="https://bulls.yosola.co/" target="_blank">
                             <img src="images/bulls.png" class="half-size" />
                         </a>
-                        <h3><a href="https://bulls.yosola.co/" target="_blank">Bulls & Cows JS Game</a></h3>
-                        <label>Interactive Bulls & Cows Game with User Experience </label>
+                        <h3><a href="https://bulls.yosola.co/" target="_blank">Bulls & Cows Game</a></h3>
+                        <label>A code-breaking game played by 1,092 people across 177 cities worldwide</label>
                     </div>
                     <div class="project-box">
                         <a href="https://multiverse.yosola.co/" target="_blank">
                             <img src="images/multiverse.png" class="half-size" />
                         </a>
-                        <h3><a href="https://multiverse.yosola.co/" target="_blank">Cristina Multiverse </a></h3>
-                        <label>Website created using Generative AI and Stable Diffusion algorithms</label>
+                        <h3><a href="https://multiverse.yosola.co/" target="_blank">Cristina Multiverse</a></h3>
+                        <label>A creative project demonstrating Stable Diffusion models combined with storytelling</label>
                     </div>
                     <div class="project-box">
-                        <a href="https://atinale.yosola.co/" target="_blank">
-                            <img src="images/atinale.png" class="half-size" />
+                        <a href="https://sustainability-ai-platform.vercel.app/" target="_blank">
+                            <img src="images/sustainability.png" class="half-size" />
                         </a>
-                        <h3><a href="https://atinale.yosola.co/" target="_blank">Atínale</a></h3>
-                        <label>A game quiz app with real questions for the Mexican Naturalization Exam</label>
+                        <h3><a href="https://sustainability-ai-platform.vercel.app/" target="_blank">Sustainability Bot</a></h3>
+                        <label>An AI-powered research assistant that generates sustainability implementation guides</label>
                     </div>
                     <div class="project-box">
-                        <a href="https://play.google.com/store/apps/details?id=co.yosola.knowmexico" target="_blank">
-                            <img src="images/ mexico.png" class="half-size" />
+                        <a href="https://sonetobot.vercel.app/" target="_blank">
+                            <img src="images/soneto.png" class="half-size" />
                         </a>
-                        <h3><a href="https://play.google.com/store/apps/details?id=co.yosola.knowmexico"
-                                target="_blank">Know Mexico</a></h3>
-                        <label>Android app with recommendations of places if you're planning to visit México</label>
+                        <h3><a href="https://sonetobot.vercel.app/" target="_blank">Soneto Bot</a></h3>
+                        <label>A creative AI that generates original Spanish sonnets inspired by user prompts</label>
                     </div>
                     <div class="project-box">
-                        <a href="https://www.linkedin.com/pulse/one-dashbutton-rule-them-all-cristina-rodr%C3%ADguez/"
-                            target="_blank">
-                            <img src="images/button.png" class="half-size" />
+                        <a href="https://sazonbot.vercel.app/" target="_blank">
+                            <img src="images/sazon.png" class="half-size" />
                         </a>
-                        <h3><a href="https://www.linkedin.com/pulse/one-dashbutton-rule-them-all-cristina-rodr%C3%ADguez/"
-                                target="_blank">Lyft Dashbutton</a></h3>
-                        <label>AWS dash button that calls a Lyft ride to the address of my next google calendar
-                            event</label>
-                    </div>
-                    <div class="project-box">
-                        <a href="https://play.google.com/store/apps/details?id=co.yosola.clubsandwich" target="_blank">
-                            <img src="images/sandwich.png" class="half-size" />
-                        </a>
-                        <h3><a href="https://play.google.com/store/apps/details?id=co.yosola.clubsandwich"
-                                target="_blank">Club Sandwich</a></h3>
-                        <label>I'm grabbing information from an API with more than 20 sandwich's recipes and list
-                            them</label>
+                        <h3><a href="https://sazonbot.vercel.app/" target="_blank">Sazon Mexican Bot</a></h3>
+                        <label>An AI assistant for discovering authentic Mexican recipes and cooking tips</label>
                     </div>
                 </div>
                 <!-- -------------- CAREER CHATBOT SECTION ---------------- -->
@@ -263,6 +253,9 @@
                         </li>
                         <li class="footer_menu_list">
                             <a href="#about">About</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#education">Education</a>
                         </li>
                         <li class="footer_menu_list">
                             <a href="#projects">Projects</a>

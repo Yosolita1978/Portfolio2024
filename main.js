@@ -127,6 +127,20 @@ function sendEmail() {
 // Data for the projects
 const projects = [
   {
+    title: "Intro to AI (MujerTech)",
+    description: "A beginner-friendly, bilingual learning experience that introduces AI concepts with clear examples and hands-on activities—built to lower the barrier to entry for underrepresented learners.",
+    skills: ["AI/ML", "Instructional Design", "Bilingual", "Interactive Learning"],
+    link: "https://intro.mujertech.org/en",
+    youtubeLink: null
+  },
+  {
+    title: "Learning How to Handle Google",
+    description: "An interactive course helping beginners use email and Google tools on mobile devices with confidence. Includes simple steps, practice tasks, and cheat sheets for checking email, sending photos, opening shared files, and joining meetings.",
+    skills: ["Instructional Design", "Google Workspace", "Mobile", "Articulate"],
+    link: "https://share.articulate.com/wf7q8eO2vnum75kWXD9S8",
+    youtubeLink: null
+  },
+  {
     title: "Next.JS Course with TechConMe",
     description: "Designed and taught a hands-on course on building dynamic web applications using Next.js, covering topics such as routing, authentication, and state management.",
     skills: ["Next.js", "React", "JavaScript", "Auth0", "FireBase"],
@@ -188,7 +202,7 @@ function createProjectCards() {
       link.classList.add('project-link');
       link.href = project.link;
       link.target = '_blank';
-      link.innerHTML = `View Project on GitHub`;
+      link.innerHTML = `View Project`;
       cardContent.appendChild(link);
     }
 
