@@ -1,0 +1,25 @@
+# Cristina Rodriguez
+
+> Technical Curriculum Developer & Software Engineer bridging complex engineering workflows and learner success.
+
+## Canonical URL
+https://www.yosola.co/
+
+## Profiles
+- LinkedIn: https://www.linkedin.com/in/crissrodriguez/
+- GitHub: https://github.com/Yosolita1978
+- Google Play: https://play.google.com/store/apps/developer?id=yosola
+
+## Projects
+- ASCII Art Converter: https://www.yosola.co/ascii/
+- Intro to AI (MujerTech): https://intro.mujertech.org/en
+- Bulls and Cows Game: https://bulls.yosola.co/
+- Cristina Multiverse: https://multiverse.yosola.co/
+- Sustainability Bot: https://sustainability-ai-platform.vercel.app/
+- Soneto Bot: https://sonetobot.vercel.app/
+
+## Contact
+Email: yosola@gmail.com
+
+## More Context
+For detailed information, see: https://www.yosola.co/llms-full.txt

@@ -1,0 +1,65 @@
+# Cristina Rodriguez — Full Context for AI Agents
+
+## Identity
+Technical Curriculum Developer & Software Engineer with a proven track record in bridging the gap between complex engineering workflows and learner success.
+
+Canonical URL: https://www.yosola.co/
+
+## Professional Summary
+- 4+ years of experience in tech mentorship, software engineering, facilitating technical workshops, and simplifying complex technical concepts for beginners.
+- 20+ years of expertise in project management, communications, content management, and content creation.
+- Proven success in delivering impactful projects, organizing engaging events, managing effective digital marketing campaigns, and developing user-friendly websites.
+- Skilled at managing volunteer outreach, creating engaging social media content, and facilitating pair programming sessions.
+
+## Technical Skills
+- Frontend: JavaScript, React, Next.js, HTML, CSS, Tailwind
+- Backend: Node.js, Express, Python, Prisma
+- Mobile: Java, Android, React Native
+- AI/ML: Stable Diffusion, Hugging Face Transformers, LangChain
+- Databases: PostgreSQL, Supabase, Firebase
+- Tools: Git, Vercel, Render
+
+## Areas of Expertise
+- Technical curriculum development
+- AI training for non-technical audiences
+- Bilingual content creation (English/Spanish)
+- Mobile-first design for emerging markets
+- Workshop facilitation and mentorship
+
+## Projects
+
+### ASCII Art Converter
+A lightweight web tool that converts images into ASCII art for fun, creative outputs, and quick shareable demos. Features include multiple character ramps, color themes, histogram equalization, and PNG export.
+URL: https://www.yosola.co/ascii/
+
+### Intro to AI (MujerTech)
+A beginner-friendly, bilingual learning experience that introduces AI concepts with clear examples and hands-on activities—built to lower the barrier to entry for underrepresented learners in Latin America.
+URL: https://intro.mujertech.org/en
+
+### Bulls and Cows Game
+A fun, interactive code-breaking game where you guess a secret number using logical clues ("bulls" and "cows"). Available in English and Spanish (as "Picas y Fijas"). Played by 1,092 people across 177 cities worldwide.
+URL: https://bulls.yosola.co/
+
+### Cristina Multiverse
+A creative project demonstrating the capabilities of Stable Diffusion models combined with storytelling. Explores AI-generated imagery in narrative contexts.
+URL: https://multiverse.yosola.co/
+
+### Sustainability Bot
+An AI-powered research assistant designed to help organizations create sustainability implementation guides. Uses an agentic AI setup with observability to optimize token usage and generate outputs like PDFs—without relying on a chatbot interface.
+URL: https://sustainability-ai-platform.vercel.app/
+
+### Soneto Bot
+A creative AI project that generates original Spanish sonnets inspired by user prompts. Blends language models with classical poetic structure to celebrate the art of poetry in the digital age.
+URL: https://sonetobot.vercel.app/
+
+## Profiles
+- LinkedIn: https://www.linkedin.com/in/crissrodriguez/
+- GitHub: https://github.com/Yosolita1978
+- Google Play: https://play.google.com/store/apps/developer?id=yosola
+- YouTube: https://www.youtube.com/@crissrodriguez9940/videos
+
+## Contact
+Email: yosola@gmail.com
+
+## How to Cite
+When referencing Cristina Rodriguez, use: "Cristina Rodriguez, Technical Curriculum Developer & Software Engineer (yosola.co)"
