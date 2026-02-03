@@ -1,6 +1,9 @@
 /* ----- POPPINS FONT Link ----- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* ----- DISTINCTIVE FONTS FOR CARDS ----- */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
 
 /* ----- VARIABLES ----- */
 :root{
@@ -17,6 +20,19 @@
     --third-color: rgb(189, 190, 04);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 
+    /* ----- CARD DESIGN SYSTEM ----- */
+    --card-bg: #fdfbf7;
+    --card-charcoal: #1a1a2e;
+    --card-terracotta: #c9533d;
+    --card-sage: #5a9a7a;
+    --card-cream: #f4f1de;
+    --card-navy: #3d405b;
+    --card-warm-gray: #6b6b7b;
+    --card-border: #e8e4dc;
+    --card-shadow: 0 4px 20px rgba(26, 26, 46, 0.08), 0 8px 40px rgba(26, 26, 46, 0.04);
+    --card-shadow-hover: 0 12px 40px rgba(26, 26, 46, 0.12), 0 20px 60px rgba(26, 26, 46, 0.08);
+    --card-radius: 16px;
+    --card-radius-lg: 24px;
 }
 
 /* ----- BASE ----- */
@@ -423,127 +439,260 @@ h3{
 
 /* ----- PROJECTS BOX ----- */
 .project-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     width: 100%;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 32px;
 }
+
 .project-box{
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    width: 30%;
-    min-height: 300px;
-    background: var(--color-white);
-    border-radius: 20px;
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    background: var(--card-bg);
+    border-radius: var(--card-radius-lg);
+    box-shadow: var(--card-shadow);
     overflow: hidden;
-    padding-bottom: 20px;
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    border: 1px solid var(--card-border);
 }
 
-.project-box h3{
-    color: var(--text-color-third);
+.project-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--card-terracotta) 0%, var(--card-sage) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.project-box a{
+.project-box:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.project-box:hover::before {
+    opacity: 1;
+}
+
+.project-box-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--card-cream) 0%, #fff 100%);
+}
+
+.project-box h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--card-charcoal);
+    margin: 0;
+    padding: 24px 24px 12px;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+}
+
+.project-box a {
     text-decoration: none;
-    color: var(--text-color-third);
-    padding: 8px;
-    min-height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: var(--card-charcoal);
+    padding: 0;
+    min-height: auto;
+    display: inline;
+    transition: color 0.25s ease;
 }
 
-.project-box label{
-    font-size: 15px;
-    color: var(--text-color-second);
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    line-height: 1.4;
-} 
+.project-box h3 a:hover {
+    color: var(--card-terracotta);
+}
+
+.project-box label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    color: var(--card-warm-gray);
+    padding: 0 24px 20px;
+    margin: 0;
+    text-align: left;
+    line-height: 1.65;
+    flex-grow: 1;
+}
 
 img.half-size {
-    transform: scale(0.3);
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transform: none;
     margin: 0;
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-box:hover img.half-size {
+    transform: scale(1.05);
 }
 
 /* ----- PROJECT TAGS ----- */
-.project-tags{
+.project-tags {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 6px;
-    margin-top: 8px;
-    padding-inline: 1rem;
+    gap: 8px;
+    padding: 0 24px 24px;
+    margin-top: auto;
 }
-.project-tags span{
-    font-size: 12px;
-    background: var(--text-color-third);
-    color: var(--color-white);
-    padding: 2px 8px;
-    border-radius: 4px;
+
+.project-tags span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    background: transparent;
+    color: var(--card-navy);
+    padding: 6px 12px;
+    border-radius: 100px;
+    border: 1px solid var(--card-border);
+    transition: all 0.25s ease;
+}
+
+.project-tags span:hover {
+    background: var(--card-navy);
+    color: #fff;
+    border-color: var(--card-navy);
 }
 
 /* ----- VENTURES SECTION ----- */
-.ventures-section{
-    padding-block: 5em;
+.ventures-section {
+    padding-block: 6em;
 }
-.ventures-grid{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
+
+.ventures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
-.venture-card{
-    flex: 1;
-    min-width: 280px;
-    max-width: 500px;
-    background: var(--color-white);
-    border-radius: 20px;
-    padding: 40px 35px;
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
-    border-left: 4px solid var(--first-color);
-    transition: .3s;
+
+.venture-card {
+    position: relative;
+    background: var(--card-bg);
+    border-radius: var(--card-radius-lg);
+    padding: 40px 36px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--card-border);
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: hidden;
 }
-.venture-card:hover{
-    box-shadow: 1px 12px 18px 4px var(--first-shadow-color);
-    transform: translateY(-4px);
+
+.venture-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(201, 83, 61, 0.03) 0%, rgba(90, 154, 122, 0.03) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
 }
-.venture-card h3{
-    font-size: 22px;
-    color: var(--text-color-third);
-    margin-bottom: 4px;
+
+.venture-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 36px;
+    right: 36px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--card-terracotta) 0%, var(--card-sage) 100%);
+    border-radius: 3px 3px 0 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
-.venture-subtitle{
-    font-size: 14px;
+
+.venture-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.venture-card:hover::before {
+    opacity: 1;
+}
+
+.venture-card:hover::after {
+    transform: scaleX(1);
+}
+
+.venture-card h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.75rem;
     font-weight: 600;
-    color: var(--first-color);
-    margin-bottom: 16px;
+    color: var(--card-charcoal);
+    margin-bottom: 6px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
 }
-.venture-description{
-    font-size: 15px;
-    color: var(--text-color-second);
-    line-height: 1.6;
+
+.venture-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--card-terracotta);
     margin-bottom: 20px;
+    display: inline-block;
+    padding: 4px 0;
+    border-bottom: 2px solid var(--card-terracotta);
 }
-.venture-link{
-    font-size: 15px;
+
+.venture-description {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--card-warm-gray);
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+.venture-link {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
     font-weight: 600;
-    color: var(--first-color);
+    color: var(--card-charcoal);
     text-decoration: none;
-    transition: .3s;
     display: inline-flex;
     align-items: center;
+    gap: 8px;
+    padding: 12px 0;
     min-height: 44px;
+    position: relative;
+    transition: all 0.3s ease;
 }
-.venture-link:hover{
-    color: var(--first-color-hover);
+
+.venture-link::before {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--card-charcoal);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.venture-link:hover {
+    color: var(--card-terracotta);
+}
+
+.venture-link:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+    background: var(--card-terracotta);
 }
 
 /* ----- FOOTER BOX ----- */
@@ -622,29 +771,57 @@ footer{
 
 /* ========== CHATBOT SHOWCASE STYLES ========== */
 .chatbot-showcase {
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    margin: 40px auto;
-    max-width: 1200px;
-    border: 1px solid #e1e5e9;
+    position: relative;
+    background: var(--card-bg);
+    border-radius: var(--card-radius-lg);
+    box-shadow: var(--card-shadow);
+    padding: 56px 48px;
+    margin: 60px auto;
+    max-width: 1100px;
+    border: 1px solid var(--card-border);
+    overflow: hidden;
+}
+
+.chatbot-showcase::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 6px;
+    background: linear-gradient(90deg, var(--card-terracotta) 0%, var(--card-sage) 50%, var(--card-navy) 100%);
+}
+
+.chatbot-showcase::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(90, 154, 122, 0.08) 0%, transparent 70%);
+    pointer-events: none;
 }
 
 .chatbot-header h2 {
-    font-size: 2.2rem;
-    color: #2c3e50;
-    margin-bottom: 15px;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--card-charcoal);
+    margin-bottom: 20px;
     text-align: center;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
 }
 
 .chatbot-header p {
+    font-family: 'DM Sans', sans-serif;
     font-size: 1.1rem;
-    color: #666;
-    line-height: 1.7;
+    color: var(--card-warm-gray);
+    line-height: 1.75;
     text-align: center;
-    margin-bottom: 25px;
-    max-width: 800px;
+    margin-bottom: 32px;
+    max-width: 720px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -653,30 +830,42 @@ footer{
     display: flex;
     justify-content: center;
     gap: 12px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     flex-wrap: wrap;
 }
 
 .tech-tag {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 8px 16px;
-    border-radius: 25px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.2);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    background: var(--card-charcoal);
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 100px;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: default;
+}
+
+.tech-tag:nth-child(odd) {
+    background: var(--card-navy);
+}
+
+.tech-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(26, 26, 46, 0.2);
 }
 
 .iframe-container {
     position: relative;
     width: 100%;
     height: 600px;
-    border: 2px solid #e1e5e9;
-    border-radius: 15px;
+    border-radius: var(--card-radius);
     overflow: hidden;
-    margin-bottom: 25px;
-    background: #f8f9fa;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 32px;
+    background: linear-gradient(135deg, var(--card-cream) 0%, #fff 100%);
+    border: 2px solid var(--card-border);
+    box-shadow: inset 0 2px 8px rgba(26, 26, 46, 0.04);
 }
 
 .iframe-container iframe {
@@ -690,8 +879,9 @@ footer{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #666;
-    font-size: 1.2rem;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--card-warm-gray);
+    font-size: 1.1rem;
     text-align: center;
     font-weight: 500;
 }
@@ -699,112 +889,202 @@ footer{
 .project-links {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 16px;
     flex-wrap: wrap;
 }
 
 .project-links a {
+    font-family: 'DM Sans', sans-serif;
     display: inline-flex;
     align-items: center;
-    padding: 15px 30px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    gap: 10px;
+    padding: 16px 32px;
+    background: var(--card-charcoal);
+    color: #fff;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 100px;
     font-weight: 600;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    font-size: 1rem;
+    letter-spacing: 0.01em;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
     min-height: 44px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-links a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--card-terracotta) 0%, var(--card-sage) 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.project-links a span,
+.project-links a {
+    position: relative;
+    z-index: 1;
 }
 
 .project-links a:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(26, 26, 46, 0.25);
+}
+
+.project-links a:hover::before {
+    opacity: 1;
 }
 
 /* Card Grid Styles */
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 24px;
 }
 
 @media(min-width: 768px) {
     .grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media(min-width: 1024px) {
     .grid {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
     }
 }
 
 /* Card Styles */
 .card {
+    position: relative;
     display: flex;
     flex-direction: column;
-    background-color: var(--color-white);
-    border: 1px solid var(--first-shadow-color);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    transition: box-shadow 0.3s;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+    padding: 0;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--card-terracotta) 0%, var(--card-sage) 100%);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .card:hover {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-6px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.card:hover::before {
+    transform: scaleY(1);
 }
 
 .card-header {
-    margin-bottom: 1rem;
+    padding: 24px 24px 16px;
+    border-bottom: 1px solid var(--card-border);
+    background: linear-gradient(180deg, rgba(244, 241, 222, 0.4) 0%, transparent 100%);
 }
 
 .card-title {
-    font-size: 1.25rem;
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.2rem;
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    align-items: flex-start;
+    gap: 10px;
     font-weight: 600;
-    color: var(--text-color-third);
+    color: var(--card-charcoal);
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+    margin: 0;
 }
 
 .card-description {
-    margin-top: 0.5rem;
-    color: var(--text-color-second);
-    line-height: 1.5;
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 12px;
+    color: var(--card-warm-gray);
+    line-height: 1.65;
+    font-size: 0.95rem;
+}
+
+.card-content {
+    padding: 20px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.skill-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
 }
 
 /* Badge Styles */
 .badge {
-    display: inline-block;
-    background-color: var(--second-color);
-    padding: 0.3rem 0.6rem;
-    border-radius: 4px;
-    font-size: 0.875rem;
-    color: var(--color-white);
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
+    font-family: 'DM Sans', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid var(--card-navy);
+    padding: 6px 14px;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--card-navy);
+    margin: 0;
+    transition: all 0.25s ease;
+}
+
+.badge:hover {
+    background: var(--card-navy);
+    color: #fff;
 }
 
 /* Link Styles */
 .project-link {
-    color: var(--first-color);
+    font-family: 'DM Sans', sans-serif;
+    color: var(--card-charcoal);
     text-decoration: none;
-    font-size: 0.875rem;
-    display: flex;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-flex;
     align-items: center;
-    gap: 0.3rem;
-    transition: color 0.3s;
-    padding: 8px;
+    gap: 6px;
+    padding: 10px 0;
     min-height: 44px;
+    margin-top: auto;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.project-link::after {
+    content: '→';
+    transition: transform 0.3s ease;
 }
 
 .project-link:hover {
-    color: var(--first-color-hover);
-    text-decoration: underline;
+    color: var(--card-terracotta);
+}
+
+.project-link:hover::after {
+    transform: translateX(4px);
 }
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
@@ -829,12 +1109,12 @@ footer{
     .nav-button{
         display: none;
     }
-    .ventures-grid{
-        flex-direction: column;
-        align-items: center;
+    .ventures-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
     }
-    .venture-card{
-        max-width: 100%;
+    .venture-card {
+        padding: 36px 32px;
     }
     .nav-menu.responsive{
         left: 0;
@@ -906,11 +1186,9 @@ footer{
     .about-info, .contact-info{
         width: 100%;
     }
-    .project-container{
-        justify-content: center;
-    }
-    .project-box{
-        width: 80%;
+    .project-container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 24px;
     }
 }
 
@@ -941,19 +1219,46 @@ footer{
     .section-title{
         font-size: 1.8rem;
     }
+    /* Card responsive 768px */
     .chatbot-showcase {
-        padding: 30px 20px;
-        margin: 20px 10px;
+        padding: 40px 28px;
+        margin: 40px 16px;
     }
     .chatbot-header h2 {
-        font-size: 1.9rem;
+        font-size: 2rem;
+    }
+    .chatbot-header p {
+        font-size: 1rem;
     }
     .iframe-container {
-        height: 500px;
+        height: 520px;
     }
     .project-links a {
-        padding: 12px 24px;
-        font-size: 1rem;
+        padding: 14px 28px;
+        font-size: 0.95rem;
+    }
+    .project-container {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .project-box h3 {
+        font-size: 1.25rem;
+        padding: 20px 20px 10px;
+    }
+    .project-box label {
+        padding: 0 20px 16px;
+    }
+    .project-tags {
+        padding: 0 20px 20px;
+    }
+    .card-header {
+        padding: 20px 20px 14px;
+    }
+    .card-content {
+        padding: 16px 20px 20px;
+    }
+    .venture-card h3 {
+        font-size: 1.5rem;
     }
     .footer-social-icons{
         gap: 20px;
@@ -965,11 +1270,25 @@ footer{
     .ventures-section{
         padding-block: 3em;
     }
-    .venture-card{
-        padding: 30px 25px;
+    .ventures-grid {
+        gap: 20px;
     }
-    .venture-card h3{
-        font-size: 20px;
+    .venture-card {
+        padding: 28px 24px;
+    }
+    .venture-card h3 {
+        font-size: 1.35rem;
+    }
+    .venture-subtitle {
+        font-size: 0.8rem;
+    }
+    .venture-description {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+    .venture-card::after {
+        left: 24px;
+        right: 24px;
     }
     .wrapper{
         padding-inline: 5vw;
@@ -997,19 +1316,28 @@ footer{
         padding: 10px 16px;
         font-size: 14px;
     }
-    .project-box{
-        width: 100%;
-        height: auto;
-        min-height: 280px;
-        padding: 20px 15px;
+    /* Project box mobile */
+    .project-container {
+        gap: 20px;
     }
-    .project-box h3{
-        font-size: 18px;
-        margin-bottom: 10px;
+    .project-box h3 {
+        font-size: 1.15rem;
+        padding: 20px 18px 10px;
     }
-    .project-box label{
-        font-size: 14px;
-        margin: 10px;
+    .project-box label {
+        font-size: 0.9rem;
+        padding: 0 18px 14px;
+    }
+    .project-tags {
+        padding: 0 18px 18px;
+        gap: 6px;
+    }
+    .project-tags span {
+        font-size: 0.7rem;
+        padding: 5px 10px;
+    }
+    img.half-size {
+        height: 180px;
     }
     .form-inputs{
         flex-direction: column;
@@ -1032,29 +1360,51 @@ footer{
     .section-title{
         font-size: 1.6rem;
     }
+    /* Chatbot mobile */
     .chatbot-showcase {
-        padding: 20px 15px;
-        margin: 15px 5px;
+        padding: 32px 20px;
+        margin: 32px 12px;
+        border-radius: var(--card-radius);
     }
     .chatbot-header h2 {
-        font-size: 1.6rem;
+        font-size: 1.65rem;
     }
     .chatbot-header p {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        margin-bottom: 24px;
     }
     .iframe-container {
         height: 450px;
+        border-radius: 12px;
     }
     .tech-stack {
         gap: 8px;
+        margin-bottom: 28px;
     }
     .tech-tag {
-        padding: 6px 12px;
-        font-size: 0.8rem;
+        padding: 8px 14px;
+        font-size: 0.75rem;
     }
     .project-links a {
-        padding: 10px 20px;
+        padding: 12px 24px;
         font-size: 0.9rem;
+    }
+    /* Educational cards mobile */
+    .card-header {
+        padding: 18px 18px 12px;
+    }
+    .card-title {
+        font-size: 1.1rem;
+    }
+    .card-description {
+        font-size: 0.9rem;
+    }
+    .card-content {
+        padding: 14px 18px 18px;
+    }
+    .badge {
+        font-size: 0.75rem;
+        padding: 5px 12px;
     }
     .footer-social-icons{
         gap: 15px;
@@ -1120,22 +1470,29 @@ footer{
     .ventures-section{
         padding-block: 2.5em;
     }
-    .venture-card{
-        padding: 25px 20px;
-        min-width: auto;
+    /* Venture card 480px */
+    .venture-card {
+        padding: 24px 20px;
+        border-radius: var(--card-radius);
     }
-    .venture-card h3{
-        font-size: 18px;
+    .venture-card h3 {
+        font-size: 1.25rem;
     }
-    .venture-subtitle{
-        font-size: 13px;
+    .venture-subtitle {
+        font-size: 0.75rem;
+        margin-bottom: 14px;
     }
-    .venture-description{
-        font-size: 14px;
+    .venture-description {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 18px;
     }
-    .project-tags span{
-        font-size: 11px;
-        padding: 2px 6px;
+    .venture-link {
+        font-size: 0.85rem;
+    }
+    .venture-card::after {
+        left: 20px;
+        right: 20px;
     }
     .top-header h1,
     .top-header h2{
@@ -1145,38 +1502,89 @@ footer{
         font-size: 1.4rem;
         margin-bottom: 1.5rem;
     }
-    .project-box{
-        min-height: 250px;
-        padding: 15px 10px;
+    /* Project box 480px */
+    .project-container {
+        gap: 16px;
     }
-    .project-box h3{
-        font-size: 16px;
+    .project-box {
+        border-radius: var(--card-radius);
     }
-    .project-box label{
-        font-size: 13px;
+    .project-box h3 {
+        font-size: 1.1rem;
+        padding: 18px 16px 8px;
     }
+    .project-box label {
+        font-size: 0.85rem;
+        padding: 0 16px 12px;
+        line-height: 1.55;
+    }
+    .project-tags {
+        padding: 0 16px 16px;
+    }
+    .project-tags span {
+        font-size: 0.65rem;
+        padding: 4px 8px;
+    }
+    img.half-size {
+        height: 160px;
+    }
+    /* Chatbot 480px */
     .chatbot-showcase {
-        padding: 15px 10px;
-        margin: 10px 5px;
+        padding: 28px 16px;
+        margin: 24px 8px;
+    }
+    .chatbot-showcase::before {
+        height: 5px;
     }
     .chatbot-header h2 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+    }
+    .chatbot-header p {
+        font-size: 0.9rem;
     }
     .iframe-container {
         height: 400px;
+        border-radius: 10px;
+    }
+    .tech-tag {
+        padding: 6px 12px;
+        font-size: 0.7rem;
     }
     .project-links a {
-        padding: 8px 16px;
+        padding: 10px 20px;
         font-size: 0.85rem;
+        border-radius: 50px;
+    }
+    /* Educational cards 480px */
+    .grid {
+        gap: 16px;
     }
     .card {
-        padding: 0.8rem;
+        border-radius: 12px;
+    }
+    .card-header {
+        padding: 16px 16px 12px;
     }
     .card-title {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
     .card-description {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+        margin-top: 10px;
+    }
+    .card-content {
+        padding: 12px 16px 16px;
+    }
+    .badge {
+        font-size: 0.7rem;
+        padding: 4px 10px;
+    }
+    .skill-wrapper {
+        gap: 6px;
+        margin-bottom: 12px;
+    }
+    .project-link {
+        font-size: 0.85rem;
     }
 }
 
@@ -1210,17 +1618,28 @@ footer{
     .ventures-section{
         padding-block: 2em;
     }
-    .venture-card{
+    /* Venture card 375px */
+    .venture-card {
         padding: 20px 16px;
+        border-radius: 14px;
     }
-    .venture-card h3{
-        font-size: 17px;
+    .venture-card h3 {
+        font-size: 1.15rem;
     }
-    .venture-description{
-        font-size: 13px;
+    .venture-subtitle {
+        font-size: 0.7rem;
+        margin-bottom: 12px;
     }
-    .venture-link{
-        font-size: 13px;
+    .venture-description {
+        font-size: 0.85rem;
+        margin-bottom: 16px;
+    }
+    .venture-link {
+        font-size: 0.8rem;
+    }
+    .venture-card::after {
+        left: 16px;
+        right: 16px;
     }
     .top-header h1,
     .top-header h2{
@@ -1229,37 +1648,94 @@ footer{
     .section-title{
         font-size: 1.3rem;
     }
-    .project-box{
-        min-height: 220px;
-        padding: 12px 8px;
+    /* Project box 375px */
+    .project-box {
+        border-radius: 14px;
     }
-    .project-box h3{
-        font-size: 15px;
+    .project-box h3 {
+        font-size: 1rem;
+        padding: 16px 14px 6px;
     }
-    .project-box label{
-        font-size: 12px;
-        margin: 8px;
+    .project-box label {
+        font-size: 0.8rem;
+        padding: 0 14px 12px;
     }
+    .project-tags {
+        padding: 0 14px 14px;
+        gap: 5px;
+    }
+    .project-tags span {
+        font-size: 0.6rem;
+        padding: 3px 7px;
+    }
+    img.half-size {
+        height: 140px;
+    }
+    /* Chatbot 375px */
     .chatbot-showcase {
-        padding: 12px 8px;
-        margin: 8px 3px;
+        padding: 24px 14px;
+        margin: 20px 6px;
+        border-radius: 14px;
+    }
+    .chatbot-showcase::before {
+        height: 4px;
     }
     .chatbot-header h2 {
-        font-size: 1.2rem;
+        font-size: 1.35rem;
     }
     .chatbot-header p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+        margin-bottom: 20px;
     }
     .iframe-container {
         height: 350px;
+        border-radius: 8px;
+    }
+    .tech-stack {
+        gap: 6px;
+        margin-bottom: 24px;
     }
     .tech-tag {
-        padding: 4px 8px;
-        font-size: 0.75rem;
+        padding: 5px 10px;
+        font-size: 0.65rem;
     }
     .project-links a {
-        padding: 6px 12px;
+        padding: 10px 18px;
         font-size: 0.8rem;
+    }
+    /* Educational cards 375px */
+    .grid {
+        gap: 14px;
+    }
+    .card {
+        border-radius: 10px;
+    }
+    .card-header {
+        padding: 14px 14px 10px;
+    }
+    .card-title {
+        font-size: 1rem;
+        gap: 8px;
+    }
+    .card-description {
+        font-size: 0.8rem;
+        margin-top: 8px;
+        line-height: 1.55;
+    }
+    .card-content {
+        padding: 10px 14px 14px;
+    }
+    .badge {
+        font-size: 0.65rem;
+        padding: 4px 8px;
+    }
+    .skill-wrapper {
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+    .project-link {
+        font-size: 0.8rem;
+        padding: 8px 0;
     }
     .footer_menu_list a{
         margin-inline: 5px;
@@ -1311,23 +1787,31 @@ footer{
     .ventures-section{
         padding-block: 1.5em;
     }
-    .venture-card{
-        padding: 16px 12px;
+    /* Venture card 320px */
+    .venture-card {
+        padding: 16px 14px;
+        border-radius: 12px;
     }
-    .venture-card h3{
-        font-size: 16px;
+    .venture-card h3 {
+        font-size: 1.05rem;
     }
-    .venture-subtitle{
-        font-size: 12px;
+    .venture-subtitle {
+        font-size: 0.65rem;
+        margin-bottom: 10px;
+        border-bottom-width: 1px;
     }
-    .venture-description{
-        font-size: 12px;
+    .venture-description {
+        font-size: 0.8rem;
+        line-height: 1.55;
+        margin-bottom: 14px;
     }
-    .venture-link{
-        font-size: 12px;
+    .venture-link {
+        font-size: 0.75rem;
     }
-    .project-tags span{
-        font-size: 10px;
+    .venture-card::after {
+        left: 14px;
+        right: 14px;
+        height: 2px;
     }
     .top-header{
         margin-bottom: 2em;
@@ -1339,45 +1823,108 @@ footer{
     .section-title{
         font-size: 1.2rem;
     }
-    .project-box{
-        min-height: 200px;
-        padding: 10px 6px;
+    /* Project box 320px */
+    .project-container {
+        gap: 14px;
     }
-    .project-box h3{
-        font-size: 14px;
+    .project-box {
+        border-radius: 12px;
     }
-    .project-box label{
-        font-size: 11px;
-        margin: 6px;
+    .project-box::before {
+        height: 3px;
     }
+    .project-box h3 {
+        font-size: 0.95rem;
+        padding: 14px 12px 6px;
+    }
+    .project-box label {
+        font-size: 0.75rem;
+        padding: 0 12px 10px;
+        line-height: 1.5;
+    }
+    .project-tags {
+        padding: 0 12px 12px;
+        gap: 4px;
+    }
+    .project-tags span {
+        font-size: 0.55rem;
+        padding: 3px 6px;
+    }
+    img.half-size {
+        height: 120px;
+    }
+    /* Chatbot 320px */
     .chatbot-showcase {
-        padding: 10px 6px;
-        margin: 6px 2px;
+        padding: 20px 12px;
+        margin: 16px 4px;
+        border-radius: 12px;
+    }
+    .chatbot-showcase::before {
+        height: 3px;
+    }
+    .chatbot-showcase::after {
+        width: 150px;
+        height: 150px;
     }
     .chatbot-header h2 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     .chatbot-header p {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
+        margin-bottom: 16px;
     }
     .iframe-container {
         height: 300px;
+        border-radius: 6px;
+        margin-bottom: 20px;
+    }
+    .tech-stack {
+        gap: 5px;
+        margin-bottom: 20px;
+    }
+    .tech-tag {
+        padding: 4px 8px;
+        font-size: 0.6rem;
     }
     .project-links a {
-        padding: 5px 10px;
+        padding: 8px 16px;
         font-size: 0.75rem;
+    }
+    /* Educational cards 320px */
+    .grid {
+        gap: 12px;
     }
     .card {
-        padding: 0.6rem;
+        border-radius: 8px;
+    }
+    .card::before {
+        width: 3px;
+    }
+    .card-header {
+        padding: 12px 12px 8px;
     }
     .card-title {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        gap: 6px;
     }
     .card-description {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
+        margin-top: 6px;
+        line-height: 1.5;
+    }
+    .card-content {
+        padding: 8px 12px 12px;
     }
     .badge {
+        font-size: 0.6rem;
+        padding: 3px 7px;
+    }
+    .skill-wrapper {
+        gap: 4px;
+        margin-bottom: 8px;
+    }
+    .project-link {
         font-size: 0.75rem;
-        padding: 0.2rem 0.5rem;
+        padding: 6px 0;
     }
 }
