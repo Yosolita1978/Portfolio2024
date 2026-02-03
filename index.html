@@ -4,6 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cristina Rodriguez — Software engineer and founder of ComadreLab. I build full-stack web apps with Next.js, React, TypeScript, Python, FastAPI, LangChain, Supabase, and PostgreSQL. I also run MujerTech, an AI training program for women entrepreneurs in Latin America.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Cristina Rodriguez — Software Engineer & Founder of ComadreLab">
+    <meta property="og:description" content="Software engineer building full-stack apps with Next.js, Python, and AI. Founder of ComadreLab (web studio) and MujerTech (AI training for women entrepreneurs).">
+    <meta property="og:url" content="https://www.yosola.co/">
+    <meta property="og:image" content="https://www.yosola.co/images/profile.png">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Cristina Rodriguez — Software Engineer & Founder of ComadreLab">
+    <meta name="twitter:description" content="Software engineer building full-stack apps with Next.js, Python, and AI. Founder of ComadreLab and MujerTech.">
+    <meta name="twitter:image" content="https://www.yosola.co/images/profile.png">
+
     <link rel="canonical" href="https://www.yosola.co/">
 
     <script defer data-domain="yosola.co" src="https://plausible.io/js/script.js"></script>
@@ -25,22 +40,41 @@
       "name": "Cristina Rodriguez",
       "url": "https://www.yosola.co/",
       "image": "https://www.yosola.co/images/profile.png",
-      "jobTitle": ["Technical Curriculum Developer", "Software Engineer"],
-      "description": "Technical Curriculum Developer & Software Engineer bridging complex engineering workflows and learner success. 4+ years in tech mentorship and workshops, 20+ years in project management and content creation.",
+      "jobTitle": ["Software Engineer", "Technical Curriculum Developer", "Founder of ComadreLab"],
+      "description": "Software engineer and founder of ComadreLab, a web studio for small businesses. Builds full-stack applications with Next.js, React, TypeScript, Python, and AI. Also runs MujerTech, an AI training program for women entrepreneurs in Latin America.",
       "email": "mailto:yosola@gmail.com",
       "knowsAbout": [
-        "Technical Curriculum Development",
         "Software Engineering",
-        "JavaScript",
-        "React",
+        "Full-Stack Development",
         "Next.js",
+        "React",
+        "TypeScript",
+        "JavaScript",
         "Python",
-        "AI Training",
-        "Workshop Facilitation",
-        "Bilingual Content Creation",
-        "Mobile-First Design",
+        "FastAPI",
+        "LangChain",
+        "CrewAI",
+        "OpenAI API",
+        "GPT-4o-mini",
+        "FAISS",
+        "Tailwind CSS",
+        "Node.js",
+        "Prisma",
+        "PostgreSQL",
+        "Supabase",
+        "NextAuth.js",
+        "Vercel",
+        "Google Vertex AI",
         "Stable Diffusion",
-        "LangChain"
+        "Hugging Face",
+        "Canvas API",
+        "PWA",
+        "Service Workers",
+        "i18n",
+        "Mobile-First Design",
+        "Technical Curriculum Development",
+        "AI Training",
+        "Bilingual Content Creation"
       ],
       "sameAs": [
         "https://www.linkedin.com/in/crissrodriguez/",
@@ -64,7 +98,7 @@
     <!-- --------- FAVICON ---------- -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
-    <title>Portfolio | Cristina Rodriguez</title>
+    <title>Cristina Rodriguez — Software Engineer & Founder of ComadreLab</title>
 </head>
 
 <body>
@@ -85,7 +119,7 @@
                         <div class="circle"></div>
                     </li>
                     <li class="nav_list">
-                        <a href="#education" class="nav-link">Education</a>
+                        <a href="#ventures" class="nav-link">Ventures</a>
                         <div class="circle"></div>
                     </li>
                     <li class="nav_list">
@@ -99,9 +133,7 @@
                 </ul>
             </div>
             <div class="nav-button">
-                <button class="btn" type="submit"
-                    onclick="window.open('docs/Cristina Rodriguez Resume-TCD-2026.pdf')">Download CV <i
-                        class="uil uil-file-alt"></i></button>
+                <a href="docs/Cristina Rodriguez Resume-TCD-2026.pdf" target="_blank" class="nav-cv-link">Download CV</a>
             </div>
             <div class="nav-menu-btn">
                 <i class="uil uil-bars" onclick="myMenuFunction()"></i>
@@ -121,16 +153,17 @@
                         <p>I'm a <span class="typedText"></span></p>
                     </div>
                     <div class="featured-text-info">
-                        <p>Experienced technical curriculum developer, emphasizing interactive learning training and
-                            mentorship. My expertise includes full-stack development, including JavaScript and Python,
-                            and mobile development with Java, Android, and React Native.
+                        <p>Software engineer and technical curriculum developer. I run ComadreLab, a web studio
+                            for small businesses, and MujerTech, an AI training program for women entrepreneurs
+                            in Latin America. I build with Next.js, Python, and React Native.
                         </p>
                     </div>
                     <div class="featured-text-btn">
-                        <button class="btn blue-btn" onclick="sendEmail()">Hire Me</button>
-                        <button class="btn" type="submit"
-                            onclick="window.open('docs/Cristina Rodriguez Resume-TCD-2026.pdf')">Download CV <i
-                                class="uil uil-file-alt"></i></button>
+                        <a class="btn blue-btn" href="https://www.comadrelab.dev/#contact" target="_blank">Work with me</a>
+                        <button class="btn btn-outline" onclick="sendEmail()">Hire me</button>
+                    </div>
+                    <div class="featured-text-cv">
+                        <a href="docs/Cristina Rodriguez Resume-TCD-2026.pdf" target="_blank" class="cv-link">Download CV <i class="uil uil-file-alt"></i></a>
                     </div>
                     <div class="social_icons">
                         <div class="icon"><a href="https://www.linkedin.com/in/crissrodriguez/" target="_blank"><i
@@ -151,8 +184,28 @@
             <!-- -------------- EDUCATIONAL PROJECT BOX ---------------- -->
             <section class="projects-section" id="education">
                 <div class="container">
-                    <h2 class="section-title">Educational Projects</h2>
                     <div id="projects-grid" class="grid"></div>
+                </div>
+            </section>
+
+            <!-- -------------- VENTURES BOX ---------------- -->
+            <section class="ventures-section" id="ventures">
+                <div class="top-header">
+                    <h2>Ventures</h2>
+                </div>
+                <div class="ventures-grid">
+                    <div class="venture-card">
+                        <h3>ComadreLab</h3>
+                        <p class="venture-subtitle">Web Studio for Small Businesses</p>
+                        <p class="venture-description">Websites launched fast, plus automations that save you time every week. I build clean, mobile-first sites and connect them to the tools you already use.</p>
+                        <a href="https://www.comadrelab.dev/" target="_blank" class="venture-link">See services & work &rarr;</a>
+                    </div>
+                    <div class="venture-card">
+                        <h3>MujerTech</h3>
+                        <p class="venture-subtitle">AI Training for Women Entrepreneurs</p>
+                        <p class="venture-description">A 16-week bootcamp teaching AI tools and business strategy to women entrepreneurs in Latin America. Launching in Bogot&aacute;.</p>
+                        <a href="#" class="venture-link">Learn more &rarr;</a>
+                    </div>
                 </div>
             </section>
 
@@ -160,50 +213,119 @@
 
             <section class="section" id="projects">
                 <div class="top-header">
-                    <h1>Projects</h1>
+                    <h2>Projects</h2>
                 </div>
                 <div class="project-container">
                     <div class="project-box">
-                        <a href="https://www.yosola.co/ascii/" target="_blank">
-                            <img src="images/ascii.png" class="half-size" />
-                        </a>
-                        <h3><a href="https://www.yosola.co/ascii/" target="_blank">ASCII Art Converter</a></h3>
-                        <label>A lightweight web tool that converts images into ASCII art with multiple themes and export options</label>
-                    </div>
-                    <div class="project-box">
-                        <a href="https://bulls.yosola.co/" target="_blank">
-                            <img src="images/bulls.png" class="half-size" />
-                        </a>
-                        <h3><a href="https://bulls.yosola.co/" target="_blank">Bulls & Cows Game</a></h3>
-                        <label>A code-breaking game played by 1,092 people across 177 cities worldwide</label>
-                    </div>
-                    <div class="project-box">
-                        <a href="https://multiverse.yosola.co/" target="_blank">
-                            <img src="images/multiverse.png" class="half-size" />
-                        </a>
-                        <h3><a href="https://multiverse.yosola.co/" target="_blank">Cristina Multiverse</a></h3>
-                        <label>A creative project demonstrating Stable Diffusion models combined with storytelling</label>
+                        <img src="images/nouvie.jpg" class="half-size" />
+                        <h3>Nouvie &mdash; Order & Inventory System</h3>
+                        <label>Full-stack system for a Colombian cleaning products company: admin dashboard for orders, inventory tracking, and PDF invoice generation, plus a public product catalog. Built mobile-first for a non-technical owner.</label>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>Prisma</span>
+                            <span>PostgreSQL</span>
+                            <span>Supabase</span>
+                            <span>Vercel</span>
+                        </div>
                     </div>
                     <div class="project-box">
                         <a href="https://sustainability-ai-platform.vercel.app/" target="_blank">
                             <img src="images/sustainability.png" class="half-size" />
                         </a>
                         <h3><a href="https://sustainability-ai-platform.vercel.app/" target="_blank">Sustainability Bot</a></h3>
-                        <label>An AI-powered research assistant that generates sustainability implementation guides</label>
-                    </div>
-                    <div class="project-box">
-                        <a href="https://sonetobot.vercel.app/" target="_blank">
-                            <img src="images/soneto.png" class="half-size" />
-                        </a>
-                        <h3><a href="https://sonetobot.vercel.app/" target="_blank">Soneto Bot</a></h3>
-                        <label>A creative AI that generates original Spanish sonnets inspired by user prompts</label>
+                        <label>AI-powered training platform that generates compliance-focused sustainability messaging playbooks using a multi-agent workflow</label>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>CrewAI</span>
+                            <span>OpenAI API</span>
+                            <span>Vercel</span>
+                        </div>
                     </div>
                     <div class="project-box">
                         <a href="https://sazonbot.vercel.app/" target="_blank">
                             <img src="images/sazon.png" class="half-size" />
                         </a>
                         <h3><a href="https://sazonbot.vercel.app/" target="_blank">Sazon Mexican Bot</a></h3>
-                        <label>An AI assistant for discovering authentic Mexican recipes and cooking tips</label>
+                        <label>Conversational AI assistant that helps users discover authentic Mexican recipes with bilingual chat, semantic search, recipe scaling, and substitutions</label>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>LangChain</span>
+                            <span>GPT-4o-mini</span>
+                            <span>FAISS</span>
+                            <span>Vercel</span>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <a href="https://sonetobot.vercel.app/" target="_blank">
+                            <img src="images/soneto.png" class="half-size" />
+                        </a>
+                        <h3><a href="https://sonetobot.vercel.app/" target="_blank">Soneto Bot</a></h3>
+                        <label>Full-stack app that discovers Spanish poems, stores them in a database, and automatically posts to Mastodon with duplicate prevention, plus a public browsing site and admin dashboard</label>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>Tailwind CSS</span>
+                            <span>NextAuth.js</span>
+                            <span>Supabase</span>
+                            <span>PostgreSQL</span>
+                            <span>Mastodon API</span>
+                            <span>Vercel</span>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <a href="https://www.picasyfijas.com/" target="_blank">
+                            <img src="images/bulls.png" class="half-size" />
+                        </a>
+                        <h3><a href="https://www.picasyfijas.com/" target="_blank">Bulls & Cows / Picas y Fijas</a></h3>
+                        <label>Fully bilingual (EN/ES) web version of the classic number guessing game with auto language detection, cultural emoji adaptations, shareable results, and PWA-ready offline support</label>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>i18n</span>
+                            <span>Service Worker</span>
+                            <span>PWA</span>
+                            <span>localStorage</span>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <a href="https://www.yosola.co/ascii/" target="_blank">
+                            <img src="images/ascii.png" class="half-size" />
+                        </a>
+                        <h3><a href="https://www.yosola.co/ascii/" target="_blank">ASCII Art Converter</a></h3>
+                        <label>Client-side converter that transforms images into ASCII art with supersampling, histogram equalization, themes, split-view comparison, and export tools. No uploads—everything stays local.</label>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Canvas API</span>
+                            <span>Clipboard API</span>
+                            <span>PNG Export</span>
+                        </div>
+                    </div>
+                    <div class="project-box">
+                        <a href="https://multiverse.yosola.co/" target="_blank">
+                            <img src="images/multiverse.png" class="half-size" />
+                        </a>
+                        <h3><a href="https://multiverse.yosola.co/" target="_blank">Cristina Multiverse</a></h3>
+                        <label>Interactive AI avatar generator with Stable Diffusion prompts, plus a showcase of a Google Vertex AI / Model Garden talk at DevFest Seattle 2024</label>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Vite</span>
+                            <span>Node.js</span>
+                            <span>Hugging Face</span>
+                            <span>Google Vertex AI</span>
+                            <span>Stable Diffusion</span>
+                        </div>
                     </div>
                 </div>
                 <!-- -------------- CAREER CHATBOT SECTION ---------------- -->
@@ -255,7 +377,7 @@
                             <a href="#about">About</a>
                         </li>
                         <li class="footer_menu_list">
-                            <a href="#education">Education</a>
+                            <a href="#ventures">Ventures</a>
                         </li>
                         <li class="footer_menu_list">
                             <a href="#projects">Projects</a>
@@ -278,6 +400,7 @@
                 <div class="bottom-footer">
                     <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Cristina Rodriguez 2025</a> - All
                         rights reserved</p>
+                    <p class="footer-studio-link"><a href="https://www.comadrelab.dev/" target="_blank">ComadreLab &middot; comadrelab.dev</a></p>
                 </div>
             </footer>
 

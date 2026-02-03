@@ -60,6 +60,9 @@ sr.reveal('.social_icons', { delay: 200 })
 sr.reveal('.featured-image', { delay: 300 })
 
 
+/* -- VENTURES -- */
+sr.reveal('.venture-card', { interval: 200 })
+
 /* -- PROJECT BOX -- */
 sr.reveal('.project-box', { interval: 200 })
 
@@ -104,14 +107,13 @@ function scrollActive() {
       sectionTop = current.offsetTop - 50,
       sectionId = current.getAttribute('id')
 
+    const navLink = document.querySelector('.nav-menu a[href*=' + sectionId + ']')
+    if (!navLink) return
+
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-
-      document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
-
+      navLink.classList.add('active-link')
     } else {
-
-      document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link')
-
+      navLink.classList.remove('active-link')
     }
   })
 }

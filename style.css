@@ -74,6 +74,17 @@ html{
     color: var(--color-white);
 }
 
+/* ----- OUTLINE / SECONDARY BUTTON ----- */
+.btn.btn-outline{
+    background: transparent;
+    border: 2px solid var(--first-color);
+    color: var(--first-color);
+}
+.btn.btn-outline:hover{
+    background: var(--first-color);
+    color: var(--color-white);
+}
+
 /* ----- GLOBAL ICONS DESIGN ----- */
 i{
     font-size: 16px;
@@ -134,6 +145,18 @@ nav{
     min-height: 44px;
     display: flex;
     align-items: center;
+}
+.nav-cv-link{
+    text-decoration: none;
+    color: var(--text-color-second);
+    font-weight: 500;
+    font-size: 14px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+}
+.nav-cv-link:hover{
+    color: var(--first-color);
 }
 .nav-menu-btn{
     display: none;
@@ -220,9 +243,30 @@ nav{
 .featured-text-btn>.blue-btn{
     background: var(--first-color);
     color: var(--color-white);
+    text-decoration: none;
 }
 .featured-text-btn>.blue-btn:hover{
     background: var(--first-color-hover);
+}
+.featured-text-cv{
+    margin-top: 12px;
+}
+.cv-link{
+    font-size: 14px;
+    color: var(--text-color-second);
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+    padding: 4px 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+.cv-link:hover{
+    color: var(--first-color);
+}
+.cv-link i{
+    font-size: 14px;
 }
 .social_icons{
     display: flex;
@@ -311,7 +355,8 @@ nav{
     text-align: center;
     margin-bottom: 5em;
 }
-.top-header h1{
+.top-header h1,
+.top-header h2{
     font-weight: 600;
     color: var(--text-color-second);
     margin-bottom: 10px;
@@ -391,11 +436,12 @@ h3{
     align-items: center;
     flex-direction: column;
     width: 30%;
-    height: 300px;
+    min-height: 300px;
     background: var(--color-white);
     border-radius: 20px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
+    padding-bottom: 20px;
 }
 
 .project-box h3{
@@ -425,6 +471,79 @@ h3{
 img.half-size {
     transform: scale(0.3);
     margin: 0;
+}
+
+/* ----- PROJECT TAGS ----- */
+.project-tags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 8px;
+    padding-inline: 1rem;
+}
+.project-tags span{
+    font-size: 12px;
+    background: var(--text-color-third);
+    color: var(--color-white);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+/* ----- VENTURES SECTION ----- */
+.ventures-section{
+    padding-block: 5em;
+}
+.ventures-grid{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.venture-card{
+    flex: 1;
+    min-width: 280px;
+    max-width: 500px;
+    background: var(--color-white);
+    border-radius: 20px;
+    padding: 40px 35px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    border-left: 4px solid var(--first-color);
+    transition: .3s;
+}
+.venture-card:hover{
+    box-shadow: 1px 12px 18px 4px var(--first-shadow-color);
+    transform: translateY(-4px);
+}
+.venture-card h3{
+    font-size: 22px;
+    color: var(--text-color-third);
+    margin-bottom: 4px;
+}
+.venture-subtitle{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--first-color);
+    margin-bottom: 16px;
+}
+.venture-description{
+    font-size: 15px;
+    color: var(--text-color-second);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.venture-link{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--first-color);
+    text-decoration: none;
+    transition: .3s;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+}
+.venture-link:hover{
+    color: var(--first-color-hover);
 }
 
 /* ----- FOOTER BOX ----- */
@@ -465,6 +584,18 @@ footer{
     font-size: 14px;
     margin-top: 10px;
     text-align: center;
+}
+.footer-studio-link{
+    margin-top: 8px;
+    font-size: 13px;
+}
+.footer-studio-link a{
+    color: var(--text-color-second);
+    text-decoration: none;
+    transition: .3s;
+}
+.footer-studio-link a:hover{
+    color: var(--first-color);
 }
 
 /* ----- EDUCATIONAL PROJECTS SECTION ----- */
@@ -698,6 +829,13 @@ footer{
     .nav-button{
         display: none;
     }
+    .ventures-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+    .venture-card{
+        max-width: 100%;
+    }
     .nav-menu.responsive{
         left: 0;
     }
@@ -796,7 +934,8 @@ footer{
     .top-header{
         margin-bottom: 3em;
     }
-    .top-header h1{
+    .top-header h1,
+    .top-header h2{
         font-size: 28px;
     }
     .section-title{
@@ -823,6 +962,15 @@ footer{
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 @media only screen and (max-width: 540px){
+    .ventures-section{
+        padding-block: 3em;
+    }
+    .venture-card{
+        padding: 30px 25px;
+    }
+    .venture-card h3{
+        font-size: 20px;
+    }
     .wrapper{
         padding-inline: 5vw;
     }
@@ -877,7 +1025,8 @@ footer{
         width: 44px;
         height: 44px;
     }
-    .top-header h1{
+    .top-header h1,
+    .top-header h2{
         font-size: 24px;
     }
     .section-title{
@@ -952,6 +1101,9 @@ footer{
         flex-wrap: wrap;
         gap: 12px;
     }
+    .featured-text-cv{
+        text-align: center;
+    }
     .btn{
         padding: 10px 14px;
         font-size: 13px;
@@ -965,7 +1117,28 @@ footer{
     .section{
         padding-block: 2.5em;
     }
-    .top-header h1{
+    .ventures-section{
+        padding-block: 2.5em;
+    }
+    .venture-card{
+        padding: 25px 20px;
+        min-width: auto;
+    }
+    .venture-card h3{
+        font-size: 18px;
+    }
+    .venture-subtitle{
+        font-size: 13px;
+    }
+    .venture-description{
+        font-size: 14px;
+    }
+    .project-tags span{
+        font-size: 11px;
+        padding: 2px 6px;
+    }
+    .top-header h1,
+    .top-header h2{
         font-size: 22px;
     }
     .section-title{
@@ -1034,7 +1207,23 @@ footer{
     .section{
         padding-block: 2em;
     }
-    .top-header h1{
+    .ventures-section{
+        padding-block: 2em;
+    }
+    .venture-card{
+        padding: 20px 16px;
+    }
+    .venture-card h3{
+        font-size: 17px;
+    }
+    .venture-description{
+        font-size: 13px;
+    }
+    .venture-link{
+        font-size: 13px;
+    }
+    .top-header h1,
+    .top-header h2{
         font-size: 20px;
     }
     .section-title{
@@ -1119,10 +1308,32 @@ footer{
     .section{
         padding-block: 1.5em;
     }
+    .ventures-section{
+        padding-block: 1.5em;
+    }
+    .venture-card{
+        padding: 16px 12px;
+    }
+    .venture-card h3{
+        font-size: 16px;
+    }
+    .venture-subtitle{
+        font-size: 12px;
+    }
+    .venture-description{
+        font-size: 12px;
+    }
+    .venture-link{
+        font-size: 12px;
+    }
+    .project-tags span{
+        font-size: 10px;
+    }
     .top-header{
         margin-bottom: 2em;
     }
-    .top-header h1{
+    .top-header h1,
+    .top-header h2{
         font-size: 18px;
     }
     .section-title{
