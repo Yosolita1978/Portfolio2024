@@ -225,3 +225,17 @@ function createProjectCards() {
 
 // Initialize the project cards
 createProjectCards();
+
+/* ----- LAZY LOAD CHATBOT IFRAME (prevents focus-stealing scroll) ----- */
+const chatbotIframe = document.querySelector('.iframe-container iframe');
+if (chatbotIframe && chatbotIframe.dataset.src) {
+  const observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        chatbotIframe.src = chatbotIframe.dataset.src;
+        observer.unobserve(chatbotIframe);
+      }
+    });
+  }, { rootMargin: '200px' });
+  observer.observe(chatbotIframe);
+}
