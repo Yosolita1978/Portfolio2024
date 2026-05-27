@@ -32,9 +32,9 @@ Canonical URL: https://www.yosola.co/
 A lightweight web tool that converts images into ASCII art for fun, creative outputs, and quick shareable demos. Features include multiple character ramps, color themes, histogram equalization, and PNG export.
 URL: https://www.yosola.co/ascii/
 
-### Intro to AI (MujerTech)
-A beginner-friendly, bilingual learning experience that introduces AI concepts with clear examples and hands-on activities—built to lower the barrier to entry for underrepresented learners in Latin America.
-URL: https://intro.mujertech.org/en
+### MujerTech: AI & Business Bootcamp
+A mobile-first, Spanish-first e-learning platform that teaches Spanish-speaking women entrepreneurs to use AI in their small businesses. Three scaffolded modules with magic-link auth and per-user progress, fully bilingual ES/EN, and an authentic assessment where learners build a real marketing piece — designed around "La IA propone, tú decides": AI as a helper, not a replacement.
+URL: https://bootcamp.mujertech.org
 
 ### Bulls and Cows Game
 A fun, interactive code-breaking game where you guess a secret number using logical clues ("bulls" and "cows"). Available in English and Spanish (as "Picas y Fijas"). Played by 1,092 people across 177 cities worldwide.

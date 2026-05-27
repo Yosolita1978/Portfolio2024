@@ -12,7 +12,7 @@ https://www.yosola.co/
 
 ## Projects
 - ASCII Art Converter: https://www.yosola.co/ascii/
-- Intro to AI (MujerTech): https://intro.mujertech.org/en
+- MujerTech: AI & Business Bootcamp: https://bootcamp.mujertech.org
 - Bulls and Cows Game: https://bulls.yosola.co/
 - Cristina Multiverse: https://multiverse.yosola.co/
 - Sustainability Bot: https://sustainability-ai-platform.vercel.app/

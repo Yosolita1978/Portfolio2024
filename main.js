@@ -129,10 +129,10 @@ function sendEmail() {
 // Data for the projects
 const projects = [
   {
-    title: "Intro to AI (MujerTech)",
-    description: "A beginner-friendly, bilingual learning experience that introduces AI concepts with clear examples and hands-on activities—built to lower the barrier to entry for underrepresented learners.",
-    skills: ["AI/ML", "Instructional Design", "Bilingual", "Interactive Learning"],
-    link: "https://intro.mujertech.org/en",
+    title: "MujerTech: AI & Business Bootcamp",
+    description: "A mobile-first, Spanish-first e-learning platform that teaches Spanish-speaking women entrepreneurs to use AI in their small businesses. Three scaffolded modules with magic-link auth and per-user progress, fully bilingual ES/EN, and an authentic assessment where learners build a real marketing piece — designed around \"La IA propone, tú decides\": AI as a helper, not a replacement.",
+    skills: ["Next.js", "TypeScript", "Supabase", "Instructional Design", "Bilingual"],
+    link: "https://bootcamp.mujertech.org",
     youtubeLink: null
   },
   {
