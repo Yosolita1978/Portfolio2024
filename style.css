@@ -251,6 +251,16 @@ nav{
     color: var(--text-color-second);
     line-height: 1.6;
 }
+.text-link{
+    color: var(--card-terracotta);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+.text-link:hover{
+    border-bottom-color: var(--card-terracotta);
+}
 .featured-text-btn{
     display: flex;
     gap: 20px;
@@ -693,6 +703,86 @@ img.half-size {
     transform: scaleX(1);
     transform-origin: left;
     background: var(--card-terracotta);
+}
+
+/* ----- CERTIFICATIONS BOX ----- */
+.certifications-section {
+    padding-block: 6em;
+}
+
+.certifications-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.certification-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 32px;
+    background: var(--card-bg);
+    border-radius: var(--card-radius-lg);
+    padding: 40px 36px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid var(--card-border);
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.certification-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+.certification-info {
+    flex: 1 1 340px;
+}
+
+.certification-card h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--card-charcoal);
+    margin-bottom: 6px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.certification-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--card-terracotta);
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 4px 0;
+    border-bottom: 2px solid var(--card-terracotta);
+}
+
+.certification-description {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    color: var(--card-warm-gray);
+    line-height: 1.7;
+}
+
+.certification-badge {
+    flex: 0 0 auto;
+}
+
+.certification-badge iframe {
+    display: block;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .certification-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 /* ----- FOOTER BOX ----- */
