@@ -132,11 +132,13 @@ nav{
 }
 .nav-logo{
    position: relative;
+   flex-shrink: 0;
 }
 .nav-name{
     font-size: 30px;
     font-weight: 600;
     color: var(--text-color-third);
+    white-space: nowrap;
 }
 .nav-logo span{
     position: absolute;
@@ -161,6 +163,10 @@ nav{
     min-height: 44px;
     display: flex;
     align-items: center;
+    white-space: nowrap;
+}
+.nav-button{
+    flex-shrink: 0;
 }
 .nav-cv-link{
     text-decoration: none;
@@ -170,6 +176,7 @@ nav{
     transition: .3s;
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 .nav-cv-link:hover{
     color: var(--first-color);
@@ -543,6 +550,42 @@ img.half-size {
 .project-box:hover img.half-size {
     transform: scale(1.05);
 }
+
+/* ----- PROJECT STATUS BADGE ----- */
+.project-status {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 2;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 100px;
+    box-shadow: 0 2px 8px rgba(26, 26, 46, 0.25);
+}
+
+/* Small dot before the label, inheriting the badge's white text color */
+.project-status::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 7px;
+    border-radius: 50%;
+    background: currentColor;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
+.status-live     { background: var(--card-sage); }
+.status-demo     { background: var(--card-navy); }
+.status-archived { background: var(--card-warm-gray); }
+.status-private  { background: var(--card-terracotta); }
 
 /* ----- PROJECT TAGS ----- */
 .project-tags {
@@ -1123,7 +1166,19 @@ footer{
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 0;
+}
+
+/* Footer pinned to the bottom of the card. One auto margin here replaces the
+   per-link auto margins, so multiple links stay together as one block. */
+.card-links {
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid var(--card-border);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
 }
 
 /* Badge Styles */
@@ -1159,7 +1214,6 @@ footer{
     gap: 6px;
     padding: 10px 0;
     min-height: 44px;
-    margin-top: auto;
     position: relative;
     transition: all 0.3s ease;
 }
@@ -1178,6 +1232,33 @@ footer{
 }
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
+/* ----- NAV FITS THE 900px-1500px DEAD ZONE ----- */
+/* The full-size nav needs ~1500px. Below that, tighten spacing in two steps
+   so the logo and links never wrap out of the 90px-tall bar. */
+@media only screen and (max-width: 1500px) {
+    nav{
+        padding-inline: 4vw;
+    }
+    .nav-link{
+        padding: 10px 10px;
+        margin-inline: 8px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .nav-name{
+        font-size: 22px;
+    }
+    .nav-link{
+        font-size: 14px;
+        padding: 10px 8px;
+        margin-inline: 2px;
+    }
+    .nav-cv-link{
+        font-size: 13px;
+    }
+}
+
 @media only screen and (max-width: 1024px){
     .wrapper{
         padding-inline: 6vw;

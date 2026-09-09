@@ -130,7 +130,7 @@ function sendEmail() {
 const projects = [
   {
     title: "MujerTech: AI & Business Bootcamp",
-    description: "A mobile-first, Spanish-first e-learning platform that teaches Spanish-speaking women entrepreneurs to use AI in their small businesses. Three scaffolded modules with magic-link auth and per-user progress, fully bilingual ES/EN, and an authentic assessment where learners build a real marketing piece — designed around \"La IA propone, tú decides\": AI as a helper, not a replacement.",
+    description: "A mobile-first, Spanish-first e-learning platform teaching Spanish-speaking women entrepreneurs to use AI in their small businesses. Three bilingual modules end in a real marketing piece, built around \"La IA propone, tú decides\": AI as a helper, not a replacement.",
     skills: ["Next.js", "TypeScript", "Supabase", "Instructional Design", "Bilingual"],
     link: "https://bootcamp.mujertech.org",
     youtubeLink: null
@@ -199,13 +199,18 @@ function createProjectCards() {
     });
     cardContent.appendChild(skillWrapper);
 
+    // Links live in one footer so a card with two links has a single gap
+    // above them, not one gap per link.
+    const cardLinks = document.createElement('div');
+    cardLinks.classList.add('card-links');
+
     if (project.link) {
       const link = document.createElement('a');
       link.classList.add('project-link');
       link.href = project.link;
       link.target = '_blank';
       link.innerHTML = `View Project`;
-      cardContent.appendChild(link);
+      cardLinks.appendChild(link);
     }
 
     if (project.youtubeLink) {
@@ -214,7 +219,11 @@ function createProjectCards() {
       youtubeLink.href = project.youtubeLink;
       youtubeLink.target = '_blank';
       youtubeLink.innerHTML = `Watch Project on YouTube`;
-      cardContent.appendChild(youtubeLink);
+      cardLinks.appendChild(youtubeLink);
+    }
+
+    if (cardLinks.children.length > 0) {
+      cardContent.appendChild(cardLinks);
     }
 
     card.appendChild(cardHeader);
