@@ -1,52 +1,79 @@
 # Cristina Rodriguez — Full Context for AI Agents
 
 ## Identity
-Technical Curriculum Developer & Software Engineer with a proven track record in bridging the gap between complex engineering workflows and learner success.
+Software Engineer and Technical Curriculum Developer based in Seattle, Washington. 5+ years building production software and teaching other people to build it.
+
+Location: Seattle, Washington (Pacific time)
+Work authorization: US Permanent Resident (Green Card) - no sponsorship required
+Availability: Open to remote, and to hybrid in the Seattle area
 
 Canonical URL: https://www.yosola.co/
 
+## Site Structure
+- https://www.yosola.co/               Home
+- https://www.yosola.co/about/         About, background and skills
+- https://www.yosola.co/ventures/      ComadreLab and MujerTech
+- https://www.yosola.co/projects/      Software projects
+- https://www.yosola.co/teaching/      Courses, workshops and curriculum
+- https://www.yosola.co/certifications/ Credentials
+- https://www.yosola.co/chat/          AI assistant about Cristina
+
 ## Professional Summary
-- 4+ years of experience in tech mentorship, software engineering, facilitating technical workshops, and simplifying complex technical concepts for beginners.
-- 20+ years of expertise in project management, communications, content management, and content creation.
-- Proven success in delivering impactful projects, organizing engaging events, managing effective digital marketing campaigns, and developing user-friendly websites.
-- Skilled at managing volunteer outreach, creating engaging social media content, and facilitating pair programming sessions.
+- 5+ years in software engineering, technical curriculum development and tech mentorship (Techtonica, May 2021 to present).
+- Runs ComadreLab, a web studio for small businesses, and MujerTech, a 16-week AI and business bootcamp for women entrepreneurs in Latin America.
+- Two decades in communications and project management before moving into tech.
+
+## Shipped Work
+- ComadreLab: six client projects shipped and supported since 2024.
+- MujerTech: live and running with its first cohort of 25 learners.
+- Picas y Fijas: played by 1,092 people across 177 cities.
+- Nouvie: order and inventory system running in production for a Colombian cleaning products company.
+- Techtonica: 50+ engineers mentored and onboarded since 2021.
 
 ## Technical Skills
-- Frontend: JavaScript, React, Next.js, HTML, CSS, Tailwind
-- Backend: Node.js, Express, Python, Prisma
-- Mobile: Java, Android, React Native
-- AI/ML: Stable Diffusion, Hugging Face Transformers, LangChain
-- Databases: PostgreSQL, Supabase, Firebase
-- Tools: Git, Vercel, Render
+- Engineering: TypeScript (strict), JavaScript, Python, SQL, React, Next.js (App Router), Node.js, FastAPI, Prisma, Git/GitHub, Docker, AWS, Vercel, GitHub Actions
+- AI & Agents: LangChain, MCP/FastMCP, Anthropic and OpenAI APIs, retrieval with pgvector, multi-agent orchestration, human-in-the-loop design, n8n
+- Data & Infrastructure: PostgreSQL, Supabase (RLS), Firebase, multi-tenant SaaS, PDF and document pipelines
+- Collaboration: SME partnership, cross-functional coordination, stakeholder communication, mentoring, technical documentation
+
+## Work Experience
+- Founder & Lead Engineer, ComadreLab (2024 to present)
+- Technical Curriculum Developer, ELM Learning (March 2024 to February 2026)
+- Technical Program Manager, Techtonica.org (May 2021 to December 2023)
+- B.A. in Communication
 
 ## Areas of Expertise
 - Technical curriculum development
 - AI training for non-technical audiences
 - Bilingual content creation (English/Spanish)
-- Mobile-first design for emerging markets
+- Mobile-first bilingual products
 - Workshop facilitation and mentorship
 
 ## Projects
+
+### Anzuelo
+Social media lead finder and content hub. A Python agent searches seven platforms, scores each lead with Claude Haiku using prompt caching, and flags content gaps into Supabase. A Next.js 16 dashboard adds a content studio that generates posts and finished visuals through chained Visual Director and FLUX image agents. No automatic sending, by design.
+URL: https://anzuelo.vercel.app
 
 ### ASCII Art Converter
 A lightweight web tool that converts images into ASCII art for fun, creative outputs, and quick shareable demos. Features include multiple character ramps, color themes, histogram equalization, and PNG export.
 URL: https://www.yosola.co/ascii/
 
 ### MujerTech: AI & Business Bootcamp
-A mobile-first, Spanish-first e-learning platform that teaches Spanish-speaking women entrepreneurs to use AI in their small businesses. Three scaffolded modules with magic-link auth and per-user progress, fully bilingual ES/EN, and an authentic assessment where learners build a real marketing piece — designed around "La IA propone, tú decides": AI as a helper, not a replacement.
+A bilingual learning platform built solo, from data model to deploy: Next.js App Router, next-intl, Supabase magic-link auth, strict TypeScript and a role-gated admin. Three scaffolded modules end in an authentic assessment where learners build a real marketing piece — designed around "La IA propone, tú decides": AI as a helper, not a replacement. Live with 25 learners.
 URL: https://bootcamp.mujertech.org
 
 ### Bulls and Cows Game
 A fun, interactive code-breaking game where you guess a secret number using logical clues ("bulls" and "cows"). Available in English and Spanish (as "Picas y Fijas"). Played by 1,092 people across 177 cities worldwide.
-URL: https://bulls.yosola.co/
+URL: https://www.picasyfijas.com/
 
 ### Cristina Multiverse
 A creative project demonstrating the capabilities of Stable Diffusion models combined with storytelling. Explores AI-generated imagery in narrative contexts.
-URL: https://multiverse.yosola.co/
+URL: https://github.com/Yosolita1978/Cristina-Multiverse (deployment retired, source on GitHub)
 
 ### Sustainability Bot
 An AI-powered research assistant designed to help organizations create sustainability implementation guides. Uses an agentic AI setup with observability to optimize token usage and generate outputs like PDFs—without relying on a chatbot interface.
-URL: https://sustainability-ai-platform.vercel.app/
+URL: https://github.com/Yosolita1978/sustainability-ai-platform (deployment retired, source on GitHub)
 
 ### Soneto Bot
 A creative AI project that generates original Spanish sonnets inspired by user prompts. Blends language models with classical poetic structure to celebrate the art of poetry in the digital age.
@@ -57,6 +84,25 @@ URL: https://sonetobot.vercel.app/
 - GitHub: https://github.com/Yosolita1978
 - Google Play: https://play.google.com/store/apps/developer?id=yosola
 - YouTube: https://www.youtube.com/@crissrodriguez9940/videos
+
+## Ventures
+
+### ComadreLab
+A web studio for small businesses. Fast, mobile-first websites plus automations that connect to the tools a business already uses.
+URL: https://www.comadrelab.dev/
+
+### MujerTech
+A 16-week bootcamp teaching AI tools and business strategy to women entrepreneurs in Latin America, launching in Bogota.
+URL: https://bootcamp.mujertech.org
+
+## Certifications
+
+### Certificate in E-Learning Instructional Design
+University of Washington. Instructional design, learning theory, and building effective online learning experiences.
+URL: https://badges.parchment.com/public/assertions/9tIVWOtySumknWMyR-n2Dg
+
+### AI Agents Fundamentals
+Hugging Face, 2025. Foundations of agentic AI systems: tool use, planning and multi-step orchestration.
 
 ## Contact
 Email: yosola@gmail.com

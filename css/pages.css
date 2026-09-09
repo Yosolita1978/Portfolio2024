@@ -1,0 +1,381 @@
+/* ============================================================
+   PAGE COMPONENTS
+   Ventures cards, project rows, project cards, teaching cards,
+   certifications, chat.
+   ============================================================ */
+
+/* ============================================================
+   GENERIC CARD  —  used by ventures and teaching
+   ============================================================ */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+.card {
+    border: 1px solid var(--border);
+    padding: 30px;
+    background: var(--bg-alt);
+    display: flex;
+    flex-direction: column;
+    transition: border-color var(--speed) var(--ease),
+                background var(--speed) var(--ease);
+}
+.card:hover { border-color: var(--border-strong); background: var(--bg-raised); }
+
+.card-name {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: var(--text);
+}
+.card-sub {
+    font-size: 12px;
+    color: var(--accent);
+    margin-bottom: 16px;
+}
+.card-desc {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.8;
+    margin-bottom: 22px;
+    flex-grow: 1;
+}
+.card-link {
+    font-size: 13px;
+    color: var(--accent);
+    align-self: flex-start;
+    border-bottom: 1px solid transparent;
+    transition: border-color var(--speed) var(--ease);
+}
+.card-link:hover { border-bottom-color: var(--accent); }
+
+/* Several links stacked at the bottom of a teaching card */
+.card-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+
+/* ----- TAG LIST ----- */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 8px;
+    margin-bottom: 22px;
+}
+.tags span {
+    font-size: 11px;
+    color: var(--text-faint);
+    border: 1px solid var(--border);
+    padding: 3px 9px;
+}
+
+/* ============================================================
+   PROJECT ROWS  —  the compact list used on the home page
+   ============================================================ */
+.proj-rows { border-top: 1px solid var(--border); }
+
+.proj-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+    gap: 24px;
+    align-items: baseline;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+    transition: background var(--speed) var(--ease);
+}
+.proj-row:hover { background: var(--bg-alt); }
+
+.proj-row-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    transition: color var(--speed) var(--ease);
+}
+.proj-row:hover .proj-row-name { color: var(--accent); }
+
+.proj-row-tech {
+    font-size: 12px;
+    color: var(--text-faint);
+    line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+    .proj-row { grid-template-columns: 1fr; gap: 8px; }
+}
+
+/* ============================================================
+   PROJECT CARDS  —  the full list on /projects/
+   ============================================================ */
+.proj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 20px;
+}
+.proj-card {
+    border: 1px solid var(--border);
+    background: var(--bg-alt);
+    display: flex;
+    flex-direction: column;
+    transition: border-color var(--speed) var(--ease);
+}
+.proj-card:hover { border-color: var(--border-strong); }
+
+.proj-thumb {
+    border-bottom: 1px solid var(--border);
+    overflow: hidden;
+    background: var(--bg);
+    aspect-ratio: 16 / 9;
+}
+.proj-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(0.35);
+    transition: filter var(--speed) var(--ease),
+                transform 400ms var(--ease);
+}
+.proj-card:hover .proj-thumb img {
+    filter: grayscale(0);
+    transform: scale(1.03);
+}
+
+.proj-body {
+    padding: 24px 26px 26px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.proj-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 11px;
+    color: var(--text-faint);
+    margin-bottom: 12px;
+}
+.proj-status::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+}
+.status-live     { color: var(--live); }
+.status-archived { color: var(--archived); }
+
+/* ============================================================
+   CERTIFICATIONS
+   ============================================================ */
+.cert-card {
+    border: 1px solid var(--border);
+    background: var(--bg-alt);
+    padding: 34px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 40px;
+    align-items: center;
+}
+.cert-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+.cert-issuer {
+    font-size: 13px;
+    color: var(--accent);
+    margin-bottom: 16px;
+}
+.cert-desc {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.8;
+    max-width: 58ch;
+    margin-bottom: 20px;
+}
+.cert-badge iframe {
+    width: 370px;
+    height: 167px;
+    border: 0;
+    max-width: 100%;
+}
+@media (max-width: 860px) {
+    .cert-card { grid-template-columns: 1fr; gap: 28px; padding: 26px; }
+}
+
+/* ============================================================
+   TWO-COLUMN TEASER  —  certifications + chat on the home page
+   ============================================================ */
+.split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+}
+@media (max-width: 860px) {
+    .split { grid-template-columns: 1fr; gap: 48px; }
+}
+
+.teaser-title, .split .cert-title {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.45;
+    margin-bottom: 8px;
+}
+.teaser-body {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Fake prompt box shown on the home page as a chat teaser */
+.prompt-box {
+    border: 1px solid var(--border);
+    padding: 16px 18px;
+    font-size: 12px;
+    color: var(--text-faint);
+    margin-bottom: 20px;
+    background: var(--bg);
+}
+.prompt-box::before {
+    content: '> ';
+    color: var(--accent);
+}
+
+/* ============================================================
+   CHAT PAGE
+   ============================================================ */
+.chat-frame {
+    border: 1px solid var(--border);
+    background: var(--bg-alt);
+    height: 640px;
+    position: relative;
+    overflow: hidden;
+}
+.chat-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    position: relative;
+    z-index: 1;
+}
+.chat-loading {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    color: var(--text-faint);
+    z-index: 0;
+}
+@media (max-width: 700px) {
+    .chat-frame { height: 560px; }
+}
+
+/* ============================================================
+   PROSE  —  the About page body copy
+   ============================================================ */
+.prose { max-width: 68ch; }
+.prose h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text);
+    margin: 44px 0 14px;
+}
+.prose h2:first-child { margin-top: 0; }
+.prose p {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.9;
+    margin-bottom: 16px;
+}
+.prose ul {
+    list-style: none;
+    margin-bottom: 16px;
+}
+.prose li {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.9;
+    padding-left: 22px;
+    position: relative;
+}
+.prose li::before {
+    content: '-';
+    position: absolute;
+    left: 4px;
+    color: var(--accent);
+}
+
+/* ----- SKILL GROUPS ----- */
+.skill-rows { border-top: 1px solid var(--border); }
+.skill-row {
+    display: grid;
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 24px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+}
+.skill-row dt { font-size: 13px; color: var(--accent); }
+.skill-row dd { font-size: 13px; color: var(--text-dim); line-height: 1.8; }
+@media (max-width: 700px) {
+    .skill-row { grid-template-columns: 1fr; gap: 6px; }
+}
+
+/* ============================================================
+   404
+   ============================================================ */
+.notfound {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--section-pad) 0;
+}
+.notfound-code {
+    font-size: clamp(48px, 12vw, 96px);
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+/* ----- CHAT PLACEHOLDER (click to load the embed) ----- */
+.chat-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    padding: 32px;
+}
+.chat-placeholder-text {
+    font-size: 13px;
+    color: var(--text-dim);
+    max-width: 46ch;
+}
+.chat-note {
+    font-size: 12px;
+    color: var(--text-faint);
+}
+
+/* Named things (ComadreLab, MujerTech, project names) inside body copy */
+.prose strong {
+    color: var(--text);
+    font-weight: 500;
+}
+
+/* Several certification cards stacked */
+.cert-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

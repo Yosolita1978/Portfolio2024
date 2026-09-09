@@ -1,0 +1,51 @@
+/* ============================================================
+   DESIGN TOKENS
+   One place for every color, font and spacing value.
+   Change a value here and it updates across all pages.
+   ============================================================ */
+
+:root {
+    /* ----- SURFACES ----- */
+    --bg:            #101010;
+    --bg-alt:        #151515;
+    --bg-raised:     #1a1a1a;
+
+    /* ----- LINES ----- */
+    --border:        #272727;
+    --border-strong: #3a3a3a;
+
+    /* ----- TEXT ----- */
+    --text:          #e8e8e8;
+    --text-dim:      #979797;
+    --text-faint:    #6b6b6b;
+
+    /* ----- ACCENT ----- */
+    --accent:        #f0a830;
+    --accent-soft:   rgba(240, 168, 48, 0.12);
+    --accent-line:   rgba(240, 168, 48, 0.35);
+    --on-accent:     #101010;
+
+    /* ----- STATUS ----- */
+    --live:          #5fbf7f;
+    --archived:      #8a8a8a;
+
+    /* ----- TYPE ----- */
+    --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, 'SF Mono',
+            Menlo, Consolas, 'Liberation Mono', monospace;
+
+    /* ----- LAYOUT ----- */
+    --max-width:     1120px;
+    --gutter:        24px;
+    --section-pad:   88px;
+
+    /* ----- MOTION ----- */
+    --ease:          cubic-bezier(0.4, 0, 0.2, 1);
+    --speed:         180ms;
+}
+
+@media (max-width: 760px) {
+    :root {
+        --section-pad: 56px;
+        --gutter: 20px;
+    }
+}

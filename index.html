@@ -4,26 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cristina Rodriguez — Software engineer and founder of ComadreLab. I build full-stack web apps with Next.js, React, TypeScript, Python, FastAPI, LangChain, Supabase, and PostgreSQL. Certified in E-Learning Instructional Design (University of Washington). I also run MujerTech, an AI training program for women entrepreneurs in Latin America.">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Cristina Rodriguez — Software Engineer & Founder of ComadreLab">
-    <meta property="og:description" content="Software engineer building full-stack apps with Next.js, Python, and AI. Founder of ComadreLab (web studio) and MujerTech (AI training for women entrepreneurs).">
-    <meta property="og:url" content="https://www.yosola.co/">
-    <meta property="og:image" content="https://www.yosola.co/images/profile.png">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Cristina Rodriguez — Software Engineer & Founder of ComadreLab">
-    <meta name="twitter:description" content="Software engineer building full-stack apps with Next.js, Python, and AI. Founder of ComadreLab and MujerTech.">
-    <meta name="twitter:image" content="https://www.yosola.co/images/profile.png">
-
+    <title>Cristina Rodriguez &mdash; Software Engineer &amp; Technical Curriculum Developer</title>
+    <meta name="description" content="Seattle-based software engineer and technical curriculum developer with 5+ years of experience. Founder of ComadreLab, a web studio for small businesses, and MujerTech, an AI bootcamp for women entrepreneurs in Latin America. Building with Next.js, Python, the Anthropic API and MCP.">
     <link rel="canonical" href="https://www.yosola.co/">
 
-    <script defer data-domain="yosola.co" src="https://plausible.io/js/script.js"></script>
+    <!-- ----- OPEN GRAPH ----- -->
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Cristina Rodriguez">
+    <meta property="og:title" content="Cristina Rodriguez &mdash; Software Engineer &amp; Technical Curriculum Developer">
+    <meta property="og:description" content="Seattle-based software engineer and technical curriculum developer with 5+ years of experience. Founder of ComadreLab, a web studio for small businesses, and MujerTech, an AI bootcamp for women entrepreneurs in Latin America. Building with Next.js, Python, the Anthropic API and MCP.">
+    <meta property="og:url" content="https://www.yosola.co/">
+    <meta property="og:image" content="https://www.yosola.co/images/profile.png">
+    <meta property="og:locale" content="en_US">
 
-    <!-- Google Analytics -->
+    <!-- ----- TWITTER ----- -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Cristina Rodriguez &mdash; Software Engineer &amp; Technical Curriculum Developer">
+    <meta name="twitter:description" content="Seattle-based software engineer and technical curriculum developer with 5+ years of experience. Founder of ComadreLab, a web studio for small businesses, and MujerTech, an AI bootcamp for women entrepreneurs in Latin America. Building with Next.js, Python, the Anthropic API and MCP.">
+    <meta name="twitter:image" content="https://www.yosola.co/images/profile.png">
+
+    <!-- ----- FAVICON ----- -->
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+
+    <!-- ----- FONT PRECONNECT ----- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- ----- CSS ----- -->
+    <link rel="stylesheet" href="/css/tokens.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/pages.css">
+
+    <!-- ----- LEGACY HASH LINKS (yosola.co/#projects -> /projects/) ----- -->
+    <script>
+        (function () {
+            var map = {
+                '#about': '/about/',
+                '#ventures': '/ventures/',
+                '#mujertech': '/ventures/',
+                '#projects': '/projects/',
+                '#education': '/teaching/',
+                '#certifications': '/certifications/',
+                '#chatbot': '/chat/',
+                '#chat': '/chat/'
+            };
+            var target = map[window.location.hash];
+            if (target) window.location.replace(target);
+        })();
+    </script>
+
+    <!-- ----- ANALYTICS ----- -->
+    <script defer data-domain="yosola.co" src="https://plausible.io/js/script.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTDXX5NWH2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -32,8 +64,9 @@
         gtag('config', 'G-RTDXX5NWH2');
     </script>
 
-    <!-- JSON-LD Structured Data -->
+    <!-- ----- STRUCTURED DATA ----- -->
     <script type="application/ld+json">
+    [
     {
       "@context": "https://schema.org",
       "@type": "Person",
@@ -43,432 +76,302 @@
       "jobTitle": ["Software Engineer", "Technical Curriculum Developer", "Founder of ComadreLab"],
       "description": "Software engineer and founder of ComadreLab, a web studio for small businesses. Builds full-stack applications with Next.js, React, TypeScript, Python, and AI. Certified in E-Learning Instructional Design (University of Washington). Also runs MujerTech, an AI training program for women entrepreneurs in Latin America.",
       "email": "mailto:yosola@gmail.com",
-      "knowsAbout": [
-        "Software Engineering",
-        "Full-Stack Development",
-        "Next.js",
-        "React",
-        "TypeScript",
-        "JavaScript",
-        "Python",
-        "FastAPI",
-        "LangChain",
-        "CrewAI",
-        "OpenAI API",
-        "GPT-4o-mini",
-        "FAISS",
-        "Tailwind CSS",
-        "Node.js",
-        "Prisma",
-        "PostgreSQL",
-        "Supabase",
-        "NextAuth.js",
-        "Vercel",
-        "Google Vertex AI",
-        "Stable Diffusion",
-        "Hugging Face",
-        "Canvas API",
-        "PWA",
-        "Service Workers",
-        "i18n",
-        "Mobile-First Design",
-        "Technical Curriculum Development",
-        "Instructional Design",
-        "E-Learning",
-        "AI Training",
-        "Bilingual Content Creation"
-      ],
-      "hasCredential": {
-        "@type": "EducationalOccupationalCredential",
-        "name": "Certificate in E-Learning Instructional Design",
-        "credentialCategory": "certificate",
-        "recognizedBy": {
-          "@type": "CollegeOrUniversity",
-          "name": "University of Washington",
-          "sameAs": "https://www.washington.edu/"
-        },
-        "url": "https://badges.parchment.com/public/assertions/9tIVWOtySumknWMyR-n2Dg"
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Seattle",
+        "addressRegion": "WA",
+        "addressCountry": "US"
       },
+      "homeLocation": { "@type": "Place", "name": "Seattle, Washington" },
+      "knowsAbout": [
+        "Software Engineering", "Full-Stack Development", "Next.js", "React",
+        "TypeScript", "JavaScript", "Python", "FastAPI", "LangChain", "CrewAI",
+        "Anthropic API", "Claude", "Model Context Protocol", "MCP", "FastMCP",
+        "Claude Code", "pgvector", "Docker", "GitHub Actions", "n8n",
+        "OpenAI API", "GPT-4o-mini", "FAISS", "Tailwind CSS", "Node.js", "Prisma",
+        "PostgreSQL", "Supabase", "NextAuth.js", "Vercel", "Google Vertex AI",
+        "Stable Diffusion", "Hugging Face", "Canvas API", "PWA", "Service Workers",
+        "i18n", "Mobile-First Design", "Technical Curriculum Development",
+        "Instructional Design", "E-Learning", "AI Training", "Bilingual Content Creation"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Certificate in E-Learning Instructional Design",
+          "credentialCategory": "certificate",
+          "recognizedBy": {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Washington",
+            "sameAs": "https://www.washington.edu/"
+          },
+          "url": "https://badges.parchment.com/public/assertions/9tIVWOtySumknWMyR-n2Dg"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "AI Agents Fundamentals",
+          "credentialCategory": "certificate",
+          "recognizedBy": { "@type": "Organization", "name": "Hugging Face" }
+        }
+      ],
       "sameAs": [
         "https://www.linkedin.com/in/crissrodriguez/",
         "https://github.com/Yosolita1978",
         "https://play.google.com/store/apps/developer?id=yosola",
         "https://www.youtube.com/@crissrodriguez9940/videos"
       ],
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://www.yosola.co/"
-      }
+      "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.yosola.co/" }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "name": "Cristina Rodriguez",
+      "url": "https://www.yosola.co/",
+      "dateModified": "2026-09-09",
+      "author": {
+        "@type": "Person",
+        "name": "Cristina Rodriguez",
+        "url": "https://www.yosola.co/"
+      },
+      "mainEntity": { "@type": "Person", "name": "Cristina Rodriguez", "url": "https://www.yosola.co/" }
     }
+    ]
     </script>
-
-    <!-- --------- UNICONS ---------- -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-
-    <!-- --------- CSS ---------- -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/45.0.0/ckeditor5.css" crossorigin>
-    <!-- --------- FAVICON ---------- -->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-
-    <title>Cristina Rodriguez — Software Engineer & Founder of ComadreLab</title>
 </head>
 
 <body>
-    <div class="container">
-        <!-- --------------- HEADER --------------- -->
-        <nav id="header">
-            <div class="nav-logo">
-                <p class="nav-name">Cristina Rodriguez</p>
-            </div>
-            <div class="nav-menu" id="myNavMenu">
-                <ul class="nav_menu_list">
-                    <li class="nav_list">
-                        <a href="#home" class="nav-link active-link">Home</a>
-                        <div class="circle"></div>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#about" class="nav-link">About</a>
-                        <div class="circle"></div>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#ventures" class="nav-link">Ventures</a>
-                        <div class="circle"></div>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#projects" class="nav-link">Projects</a>
-                        <div class="circle"></div>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#certifications" class="nav-link">Certifications</a>
-                        <div class="circle"></div>
-                    </li>
-                    <li class="nav_list">
-                        <a href="#chatbot" class="nav-link">Chat with me</a>
-                        <div class="circle"></div>
-                    </li>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav class="nav">
+        <div class="nav-inner">
+            <a class="nav-logo" href="/">~/cristina-rodriguez</a>
+
+            <button class="nav-toggle" type="button" id="nav-toggle"
+                    aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                        <li><a href="/" aria-current="page">home</a></li>
+                        <li><a href="/about/">about</a></li>
+                        <li><a href="/ventures/">ventures</a></li>
+                        <li><a href="/projects/">projects</a></li>
+                        <li><a href="/teaching/">teaching</a></li>
+                        <li><a href="/certifications/">certifications</a></li>
+                        <li><a href="/chat/">chat</a></li>
                 </ul>
+                <a class="nav-cv" href="/docs/cristina-rodriguez-cv-engineering-2026.pdf" target="_blank" rel="noopener">download-cv</a>
             </div>
-            <div class="nav-button">
-                <a href="docs/Cristina Rodriguez Resume-TCD-2026.pdf" target="_blank" class="nav-cv-link">Download CV</a>
+        </div>
+    </nav>
+
+    <main id="main">
+        <section class="hero">
+            <div class="shell">
+                <div class="hero-grid">
+                    <div>
+                    <p class="cmd" data-reveal>whoami</p>
+                    <h1 class="hero-title" data-reveal>software engineer<br>&amp; <span class="typedText" data-strings="technical curriculum developer|instructional designer|ai trainer"></span><span class="cursor">_</span></h1>
+                    <p class="hero-body" data-reveal>Software engineer and technical curriculum developer, certified in E-Learning Instructional Design by the University of Washington. I run <a href="https://www.comadrelab.dev/" target="_blank" rel="noopener" class="text-link">ComadreLab</a>, a web studio for small businesses, and <a href="/ventures/" class="text-link">MujerTech</a>, an AI training program for women entrepreneurs in Latin America. I build with Next.js, Python, and the Anthropic API.</p>
+                    <div class="btn-row" data-reveal>
+                        <a class="btn btn-primary" href="https://www.comadrelab.dev/#contact" target="_blank" rel="noopener">work with me</a>
+                        <a class="btn btn-ghost" href="mailto:yosola@gmail.com">hire me</a>
+                        <a class="btn btn-ghost" href="/docs/cristina-rodriguez-cv-engineering-2026.pdf" target="_blank" rel="noopener">download cv</a>
+                    </div>
+                    <div class="social-row" data-reveal>
+                        <a href="https://www.linkedin.com/in/crissrodriguez/" target="_blank" rel="noopener">linkedin</a>
+                        <span class="sep">&middot;</span>
+                        <a href="https://github.com/Yosolita1978" target="_blank" rel="noopener">github</a>
+                        <span class="sep">&middot;</span>
+                        <a href="https://www.youtube.com/@crissrodriguez9940/videos" target="_blank" rel="noopener">youtube</a>
+                    </div>
+                    </div>
+                    <div data-reveal>
+                        <div class="portrait">
+                            <img src="/images/profile.png" alt="Portrait of Cristina Rodriguez" width="600" height="600">
+                        </div>
+                        <p class="portrait-caption">./profile.png</p>
+                    </div>
+                </div>
             </div>
-            <div class="nav-menu-btn">
-                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </section>
+
+        <!-- ----- VENTURES ----- -->
+        <section class="section section--alt">
+            <div class="shell">
+                <div class="cmd-row" data-reveal>
+                    <h2 class="cmd">ls ventures/</h2>
+                    <a class="link-arrow" href="/ventures/">all ventures &rarr;</a>
+                </div>
+                <div class="card-grid" data-reveal-group>
+                    <article class="card">
+                        <h3 class="card-name">comadrelab/</h3>
+                        <p class="card-sub">Web Studio for Small Businesses</p>
+                        <p class="card-desc">Full-stack and AI systems for small businesses and Latin American clients &mdash; architecture, data modeling and deployment end to end. Six client projects shipped and supported since 2024.</p>
+                        <a class="card-link" href="https://www.comadrelab.dev/" target="_blank" rel="noopener">See services &amp; work &rarr;</a>
+                    </article>
+                    <article class="card">
+                        <h3 class="card-name">mujertech/</h3>
+                        <p class="card-sub">AI Training for Women Entrepreneurs</p>
+                        <p class="card-desc">A 16-week bootcamp teaching AI tools and business strategy to women entrepreneurs in Latin America. Launching in Bogot&aacute;.</p>
+                        <a class="card-link" href="https://bootcamp.mujertech.org" target="_blank" rel="noopener">Visit the bootcamp &rarr;</a>
+                    </article>
+                </div>
             </div>
-        </nav>
+        </section>
 
+        <!-- ----- PROJECTS ----- -->
+        <section class="section">
+            <div class="shell">
+                <div class="cmd-row" data-reveal>
+                    <h2 class="cmd">ls projects/</h2>
+                    <a class="link-arrow" href="/projects/">all projects &rarr;</a>
+                </div>
+                <div class="proj-rows" data-reveal-group>
+                    <a class="proj-row" href="https://anzuelo.vercel.app" target="_blank" rel="noopener">
+                        <span class="proj-row-name">anzuelo/</span>
+                        <span class="proj-row-tech">next.js 16 &middot; typescript &middot; python &middot; claude haiku &middot; supabase &middot; flux &middot; multi-agent</span>
+                    </a>
+                    <a class="proj-row" href="https://www.nouvie.co/" target="_blank" rel="noopener">
+                        <span class="proj-row-name">nouvie/</span>
+                        <span class="proj-row-tech">next.js &middot; prisma &middot; postgresql &middot; supabase &middot; pdf pipeline &middot; vercel</span>
+                    </a>
+                    <a class="proj-row" href="https://github.com/Yosolita1978/sustainability-ai-platform" target="_blank" rel="noopener">
+                        <span class="proj-row-name">sustainability-bot/</span>
+                        <span class="proj-row-tech">next.js &middot; react &middot; typescript &middot; python &middot; fastapi &middot; crewai &middot; openai api &middot; vercel</span>
+                    </a>
+                    <a class="proj-row" href="https://sazonbot.vercel.app/" target="_blank" rel="noopener">
+                        <span class="proj-row-name">sazon-bot/</span>
+                        <span class="proj-row-tech">next.js &middot; react &middot; typescript &middot; tailwind css &middot; python &middot; fastapi &middot; langchain &middot; gpt-4o-mini &middot; faiss &middot; vercel</span>
+                    </a>
+                    <a class="proj-row" href="https://sonetobot.vercel.app/" target="_blank" rel="noopener">
+                        <span class="proj-row-name">soneto-bot/</span>
+                        <span class="proj-row-tech">next.js &middot; typescript &middot; tailwind css &middot; nextauth.js &middot; supabase &middot; postgresql &middot; mastodon api &middot; vercel</span>
+                    </a>
+                    <a class="proj-row" href="https://www.picasyfijas.com/" target="_blank" rel="noopener">
+                        <span class="proj-row-name">picas-y-fijas/</span>
+                        <span class="proj-row-tech">javascript &middot; html &middot; css &middot; i18n &middot; service worker &middot; pwa &middot; localstorage</span>
+                    </a>
+                    <a class="proj-row" href="/ascii/">
+                        <span class="proj-row-name">ascii-converter/</span>
+                        <span class="proj-row-tech">javascript &middot; html &middot; css &middot; canvas api &middot; clipboard api &middot; png export</span>
+                    </a>
+                    <a class="proj-row" href="https://github.com/Yosolita1978/Cristina-Multiverse" target="_blank" rel="noopener">
+                        <span class="proj-row-name">cristina-multiverse/</span>
+                        <span class="proj-row-tech">react &middot; vite &middot; node.js &middot; hugging face &middot; google vertex ai &middot; stable diffusion</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-        <!-- -------------- MAIN ---------------- -->
-        <main class="wrapper">
-            <!-- -------------- FEATURED BOX ---------------- -->
-            <section class="featured-box" id="home">
-                <div class="featured-text">
-                    <div class="featured-text-card">
-                        <span>Cristina Rodriguez</span>
-                    </div>
-                    <div class="featured-name">
-                        <p>I'm a <span class="typedText"></span></p>
-                    </div>
-                    <div class="featured-text-info">
-                        <p>Software engineer and technical curriculum developer, certified in E-Learning
-                            Instructional Design by the University of Washington. I run <a
-                                href="https://www.comadrelab.dev/" target="_blank" class="text-link">ComadreLab</a>, a web studio
-                            for small businesses, and <a href="#mujertech" class="text-link">MujerTech</a>, an AI training program for women entrepreneurs
-                            in Latin America. I build with Next.js, Python, and React Native.
-                        </p>
-                    </div>
-                    <div class="featured-text-btn">
-                        <a class="btn blue-btn" href="https://www.comadrelab.dev/#contact" target="_blank">Work with me</a>
-                        <button class="btn btn-outline" onclick="sendEmail()">Hire me</button>
-                    </div>
-                    <div class="featured-text-cv">
-                        <a href="docs/Cristina Rodriguez Resume-TCD-2026.pdf" target="_blank" class="cv-link">Download CV <i class="uil uil-file-alt"></i></a>
-                    </div>
-                    <div class="social_icons">
-                        <div class="icon"><a href="https://www.linkedin.com/in/crissrodriguez/" target="_blank"><i
-                                    class="uil uil-linkedin-alt"></i></a></div>
-                        <div class="icon"><a href="https://github.com/Yosolita1978" target="_blank"><i
-                                    class="uil uil-github-alt"></i></a></div>
-                        <div class="icon"><a href="https://play.google.com/store/apps/developer?id=yosola"
-                                target="_blank"><i class="uil uil-google-play"></i></a></div>
+        <!-- ----- TEACHING ----- -->
+        <section class="section section--alt">
+            <div class="shell">
+                <div class="cmd-row" data-reveal>
+                    <h2 class="cmd">ls teaching/</h2>
+                    <a class="link-arrow" href="/teaching/">all teaching work &rarr;</a>
+                </div>
+                <div class="proj-rows" data-reveal-group>
+                    <a class="proj-row" href="https://bootcamp.mujertech.org" target="_blank" rel="noopener">
+                        <span class="proj-row-name">mujertech-bootcamp/</span>
+                        <span class="proj-row-tech">next.js app router &middot; typescript &middot; next-intl &middot; supabase &middot; instructional design &middot; bilingual</span>
+                    </a>
+                    <a class="proj-row" href="https://share.articulate.com/wf7q8eO2vnum75kWXD9S8" target="_blank" rel="noopener">
+                        <span class="proj-row-name">handle-google/</span>
+                        <span class="proj-row-tech">instructional design &middot; google workspace &middot; mobile &middot; articulate</span>
+                    </a>
+                    <a class="proj-row" href="https://github.com/Yosolita1978/Conference-Landing?tab=readme-ov-file#nextjs-course-overview" target="_blank" rel="noopener">
+                        <span class="proj-row-name">nextjs-course-techconme/</span>
+                        <span class="proj-row-tech">next.js &middot; react &middot; javascript &middot; auth0 &middot; firebase</span>
+                    </a>
+                    <a class="proj-row" href="https://github.com/Yosolita1978/AiWorkshop" target="_blank" rel="noopener">
+                        <span class="proj-row-name">avatar-workshop-sd15/</span>
+                        <span class="proj-row-tech">stable diffusion &middot; machine learning &middot; image generation &middot; python</span>
+                    </a>
+                    <a class="proj-row" href="https://github.com/Techtonica/Template2023ReactAndVite" target="_blank" rel="noopener">
+                        <span class="proj-row-name">express-react-vite/</span>
+                        <span class="proj-row-tech">react &middot; express &middot; vite &middot; full-stack development &middot; database integration</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
+        <!-- ----- CERTIFICATIONS + CHAT ----- -->
+        <section class="section">
+            <div class="shell">
+                <div class="split">
+                    <div data-reveal>
+                        <h2 class="cmd">cat certifications.md</h2>
+                        <h3 class="teaser-title">Certificate in E-Learning Instructional Design</h3>
+                        <p class="card-sub">University of Washington</p>
+                        <p class="teaser-body">A professional certificate in instructional design, learning theory, and building effective online learning experiences &mdash; deepening my work as a technical curriculum developer.</p>
+                        <a class="link-arrow" href="/certifications/">see certifications &rarr;</a>
+                    </div>
+                    <div data-reveal>
+                        <h2 class="cmd">ask-me-anything</h2>
+                        <p class="teaser-body">An interactive AI assistant that knows all about my professional journey, technical skills, and project experience. Built with Hugging Face Transformers.</p>
+                        <p class="prompt-box">Ask anything about Cristina Rodriguez&hellip;</p>
+                        <a class="link-arrow" href="/chat/">open the chatbot &rarr;</a>
                     </div>
                 </div>
-                <div class="featured-image">
-                    <div class="image">
-                        <img src="images/profile.png" alt="avatar">
-                    </div>
-                </div>
-            </section>
-            <!-- -------------- EDUCATIONAL PROJECT BOX ---------------- -->
-            <section class="projects-section" id="education">
-                <div class="container">
-                    <div id="projects-grid" class="grid"></div>
-                </div>
-            </section>
+            </div>
+        </section>
+    </main>
 
-            <!-- -------------- VENTURES BOX ---------------- -->
-            <section class="ventures-section" id="ventures">
-                <div class="top-header">
-                    <h2>Ventures</h2>
+    <footer class="footer">
+        <div class="shell">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand-col">
+                    <a class="footer-brand" href="/">~/cristina-rodriguez</a>
+                    <p class="footer-tagline">
+                        <a href="https://www.comadrelab.dev/" target="_blank" rel="noopener">comadrelab &middot; comadrelab.dev</a>
+                    </p>
                 </div>
-                <div class="ventures-grid">
-                    <div class="venture-card">
-                        <h3>ComadreLab</h3>
-                        <p class="venture-subtitle">Web Studio for Small Businesses</p>
-                        <p class="venture-description">Websites launched fast, plus automations that save you time every week. I build clean, mobile-first sites and connect them to the tools you already use.</p>
-                        <a href="https://www.comadrelab.dev/" target="_blank" class="venture-link">See services & work &rarr;</a>
-                    </div>
-                    <div class="venture-card" id="mujertech">
-                        <h3>MujerTech</h3>
-                        <p class="venture-subtitle">AI Training for Women Entrepreneurs</p>
-                        <p class="venture-description">A 16-week bootcamp teaching AI tools and business strategy to women entrepreneurs in Latin America. Launching in Bogot&aacute;.</p>
-                        <a href="#" class="venture-link">Learn more &rarr;</a>
-                    </div>
-                </div>
-            </section>
 
-            <!-- -------------- CERTIFICATIONS BOX ---------------- -->
-            <section class="certifications-section" id="certifications">
-                <div class="top-header">
-                    <h2>Certifications</h2>
-                </div>
-                <div class="certifications-grid">
-                    <div class="certification-card">
-                        <div class="certification-info">
-                            <h3>Certificate in E-Learning Instructional Design</h3>
-                            <p class="certification-subtitle">University of Washington</p>
-                            <p class="certification-description">A professional certificate in instructional design, learning theory, and building effective online learning experiences &mdash; deepening my work as a technical curriculum developer.</p>
-                        </div>
-                        <div class="certification-badge">
-                            <iframe src="https://badges.parchment.com/public/assertions/9tIVWOtySumknWMyR-n2Dg?embedVersion=1&amp;embedWidth=370&amp;embedHeight=167&amp;utm_source=html_embed" style="width: 370px; height: 167px; border: 0px;" title="Badge: Certificate in E-Learning Instructional Design" loading="lazy"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- -------------- PROJECT BOX ---------------- -->
-
-            <section class="section" id="projects">
-                <div class="top-header">
-                    <h2>Projects</h2>
-                </div>
-                <div class="project-container">
-                    <div class="project-box">
-                        <span class="project-status status-live">Live</span>
-                        <a href="https://www.nouvie.co/" target="_blank">
-                            <img src="images/nouvie.jpg" class="half-size" />
-                        </a>
-                        <h3><a href="https://www.nouvie.co/" target="_blank">Nouvie &mdash; Order & Inventory System</a></h3>
-                        <label>Full-stack system for a Colombian cleaning products company: admin dashboard for orders, inventory tracking, and PDF invoice generation, plus a public product catalog. Built mobile-first for a non-technical owner.</label>
-                        <div class="project-tags">
-                            <span>Next.js</span>
-                            <span>Prisma</span>
-                            <span>PostgreSQL</span>
-                            <span>Supabase</span>
-                            <span>Vercel</span>
-                        </div>
-                    </div>
-                    <div class="project-box">
-                        <span class="project-status status-archived">Archived</span>
-                        <a href="https://github.com/Yosolita1978/sustainability-ai-platform" target="_blank" title="Deployment retired — view the source on GitHub">
-                            <img src="images/sustainability.png" class="half-size" />
-                        </a>
-                        <h3><a href="https://github.com/Yosolita1978/sustainability-ai-platform" target="_blank" title="Deployment retired — view the source on GitHub">Sustainability Bot</a></h3>
-                        <label>AI-powered training platform that generates compliance-focused sustainability messaging playbooks using a multi-agent workflow</label>
-                        <div class="project-tags">
-                            <span>Next.js</span>
-                            <span>React</span>
-                            <span>TypeScript</span>
-                            <span>Python</span>
-                            <span>FastAPI</span>
-                            <span>CrewAI</span>
-                            <span>OpenAI API</span>
-                            <span>Vercel</span>
-                        </div>
-                    </div>
-                    <div class="project-box">
-                        <span class="project-status status-live">Live</span>
-                        <a href="https://sazonbot.vercel.app/" target="_blank">
-                            <img src="images/sazon.png" class="half-size" />
-                        </a>
-                        <h3><a href="https://sazonbot.vercel.app/" target="_blank">Sazon Mexican Bot</a></h3>
-                        <label>Conversational AI assistant that helps users discover authentic Mexican recipes with bilingual chat, semantic search, recipe scaling, and substitutions</label>
-                        <div class="project-tags">
-                            <span>Next.js</span>
-                            <span>React</span>
-                            <span>TypeScript</span>
-                            <span>Tailwind CSS</span>
-                            <span>Python</span>
-                            <span>FastAPI</span>
-                            <span>LangChain</span>
-                            <span>GPT-4o-mini</span>
-                            <span>FAISS</span>
-                            <span>Vercel</span>
-                        </div>
-                    </div>
-                    <div class="project-box">
-                        <span class="project-status status-live">Live</span>
-                        <a href="https://sonetobot.vercel.app/" target="_blank">
-                            <img src="images/soneto.png" class="half-size" />
-                        </a>
-                        <h3><a href="https://sonetobot.vercel.app/" target="_blank">Soneto Bot</a></h3>
-                        <label>Full-stack app that discovers Spanish poems, stores them in a database, and automatically posts to Mastodon with duplicate prevention, plus a public browsing site and admin dashboard</label>
-                        <div class="project-tags">
-                            <span>Next.js</span>
-                            <span>TypeScript</span>
-                            <span>Tailwind CSS</span>
-                            <span>NextAuth.js</span>
-                            <span>Supabase</span>
-                            <span>PostgreSQL</span>
-                            <span>Mastodon API</span>
-                            <span>Vercel</span>
-                        </div>
-                    </div>
-                    <div class="project-box">
-                        <span class="project-status status-live">Live</span>
-                        <a href="https://www.picasyfijas.com/" target="_blank">
-                            <img src="images/bulls.png" class="half-size" />
-                        </a>
-                        <h3><a href="https://www.picasyfijas.com/" target="_blank">Bulls & Cows / Picas y Fijas</a></h3>
-                        <label>Fully bilingual (EN/ES) web version of the classic number guessing game with auto language detection, cultural emoji adaptations, shareable results, and PWA-ready offline support</label>
-                        <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>i18n</span>
-                            <span>Service Worker</span>
-                            <span>PWA</span>
-                            <span>localStorage</span>
-                        </div>
-                    </div>
-                    <div class="project-box">
-                        <span class="project-status status-live">Live</span>
-                        <a href="https://www.yosola.co/ascii/" target="_blank">
-                            <img src="images/ascii.png" class="half-size" />
-                        </a>
-                        <h3><a href="https://www.yosola.co/ascii/" target="_blank">ASCII Art Converter</a></h3>
-                        <label>Client-side converter that transforms images into ASCII art with supersampling, histogram equalization, themes, split-view comparison, and export tools. No uploads—everything stays local.</label>
-                        <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>Canvas API</span>
-                            <span>Clipboard API</span>
-                            <span>PNG Export</span>
-                        </div>
-                    </div>
-                    <div class="project-box">
-                        <span class="project-status status-archived">Archived</span>
-                        <a href="https://github.com/Yosolita1978/Cristina-Multiverse" target="_blank" title="Deployment retired — view the source on GitHub">
-                            <img src="images/multiverse.png" class="half-size" />
-                        </a>
-                        <h3><a href="https://github.com/Yosolita1978/Cristina-Multiverse" target="_blank" title="Deployment retired — view the source on GitHub">Cristina Multiverse</a></h3>
-                        <label>Interactive AI avatar generator with Stable Diffusion prompts, plus a showcase of a Google Vertex AI / Model Garden talk at DevFest Seattle 2024</label>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>Vite</span>
-                            <span>Node.js</span>
-                            <span>Hugging Face</span>
-                            <span>Google Vertex AI</span>
-                            <span>Stable Diffusion</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- -------------- CAREER CHATBOT SECTION ---------------- -->
-                <div class="chatbot-showcase" id="chatbot">
-                    <div class="chatbot-header">
-                        <h2>🤖 Ask Me Anything Chatbot 🤖</h2>
-                        <p>An interactive AI assistant that knows all about my professional journey, technical skills, and project experience. Ask it questions about my background in software development, curriculum design, or any of my projects. Built with Hugging Face Transformers.</p>
-                    </div>
-                    
-                    <div class="tech-stack">
-                        <span class="tech-tag">AI/ML</span>
-                        <span class="tech-tag">NLP</span>
-                        <span class="tech-tag">Hugging Face</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Transformers</span>
-                    </div>
-
-                    <div class="iframe-container">
-                        <div class="loading-message">Ask anything about Cristina Rodriguez...</div>
-                        <iframe
-                            data-src="https://hf.co/embed/ECRodriguez/career_chatbot"
-                            title="Career Chatbot"
-                            width="100%"
-                            height="100%"
-                            frameborder="0"
-                            scrolling="no"
-                            loading="lazy"
-                            tabindex="-1">
-                        </iframe>
-                    </div>
-
-                    <div class="project-links">
-                        <a href="https://huggingface.co/spaces/ECRodriguez/career_chatbot" target="_blank">
-                            View on Hugging Face →
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- --------------- FOOTER --------------- -->
-            <footer>
-                <div class="top-footer">
-                    <p>Cristina Rodriguez</p>
-                </div>
-                <div class="middle-footer">
-                    <ul class="footer-menu">
-                        <li class="footer_menu_list">
-                            <a href="#home">Home</a>
-                        </li>
-                        <li class="footer_menu_list">
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="footer_menu_list">
-                            <a href="#ventures">Ventures</a>
-                        </li>
-                        <li class="footer_menu_list">
-                            <a href="#projects">Projects</a>
-                        </li>
-                        <li class="footer_menu_list">
-                            <a href="#certifications">Certifications</a>
-                        </li>
+                <div class="footer-col">
+                    <p class="footer-heading">site/</p>
+                    <ul>
+                        <li><a href="/">home</a></li>
+                        <li><a href="/about/">about</a></li>
+                        <li><a href="/ventures/">ventures</a></li>
                     </ul>
                 </div>
-                <div class="footer-social-icons">
-                    <div class="icon"><a href="https://www.linkedin.com/in/crissrodriguez/" target="_blank"><i
-                                class="uil uil-linkedin-alt"></i></a></div>
-                    <div class="icon"><a href="https://github.com/Yosolita1978" target="_blank"><i
-                                class="uil uil-github-alt"></i></a></div>
-                    <div class="icon"><a href="https://play.google.com/store/apps/developer?id=yosola"
-                            target="_blank"><i class="uil uil-google-play"></i></a></div>
-                    <div class="icon">
-                        <a href="https://www.youtube.com/@crissrodriguez9940/videos" target="_blank">
-                            <i class="uil uil-youtube"></i>
-                        </a>
-                    </div>
+
+                <div class="footer-col">
+                    <p class="footer-heading">work/</p>
+                    <ul>
+                        <li><a href="/projects/">projects</a></li>
+                        <li><a href="/teaching/">teaching</a></li>
+                        <li><a href="/certifications/">certifications</a></li>
+                        <li><a href="/chat/">chat</a></li>
+                    </ul>
                 </div>
-                <div class="bottom-footer">
-                    <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Cristina Rodriguez 2025</a> - All
-                        rights reserved</p>
-                    <p class="footer-studio-link"><a href="https://www.comadrelab.dev/" target="_blank">ComadreLab &middot; comadrelab.dev</a></p>
-                </div>
-            </footer>
+            </div>
 
-    </div>
+            <div class="footer-col" style="margin-bottom:40px;">
+                <p class="footer-heading">elsewhere/</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/crissrodriguez/" target="_blank" rel="noopener">linkedin</a></li>
+                    <li><a href="https://github.com/Yosolita1978" target="_blank" rel="noopener">github</a></li>
+                    <li><a href="https://www.youtube.com/@crissrodriguez9940/videos" target="_blank" rel="noopener">youtube</a></li>
+                    <li><a href="https://play.google.com/store/apps/developer?id=yosola" target="_blank" rel="noopener">google play</a></li>
+                </ul>
+            </div>
 
+            <div class="footer-bottom">
+                <p>Copyright &copy; Cristina Rodriguez 2026 &mdash; All rights reserved</p>
+                <p><a href="mailto:yosola@gmail.com">yosola@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
 
-
-
-    <!-- ----- TYPING JS Link ----- -->
+    <!-- ----- LIBRARIES (the hero animation) ----- -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-    <!-- ----- SCROLL REVEAL JS Link----- -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- ----- MAIN JS ----- -->
-    <script src="main.js"></script>
+    <!-- ----- SITE SCRIPTS ----- -->
+    <script src="/js/nav.js"></script>
+    <script src="/js/hero.js"></script>
 </body>
 
 </html>

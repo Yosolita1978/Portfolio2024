@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chat &mdash; Ask Me Anything AI Assistant | Cristina Rodriguez</title>
+    <meta name="description" content="An interactive AI assistant trained on Cristina Rodriguez's professional background. Ask about her software engineering work, curriculum design experience and projects. Built with Hugging Face Transformers.">
+    <link rel="canonical" href="https://www.yosola.co/chat/">
+
+    <!-- ----- OPEN GRAPH ----- -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Cristina Rodriguez">
+    <meta property="og:title" content="Chat &mdash; Ask Me Anything AI Assistant | Cristina Rodriguez">
+    <meta property="og:description" content="An interactive AI assistant trained on Cristina Rodriguez's professional background. Ask about her software engineering work, curriculum design experience and projects. Built with Hugging Face Transformers.">
+    <meta property="og:url" content="https://www.yosola.co/chat/">
+    <meta property="og:image" content="https://www.yosola.co/images/profile.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- ----- TWITTER ----- -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Chat &mdash; Ask Me Anything AI Assistant | Cristina Rodriguez">
+    <meta name="twitter:description" content="An interactive AI assistant trained on Cristina Rodriguez's professional background. Ask about her software engineering work, curriculum design experience and projects. Built with Hugging Face Transformers.">
+    <meta name="twitter:image" content="https://www.yosola.co/images/profile.png">
+
+    <!-- ----- FAVICON ----- -->
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+
+    <!-- ----- FONT PRECONNECT ----- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- ----- CSS ----- -->
+    <link rel="stylesheet" href="/css/tokens.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/pages.css">
+
+    <!-- ----- ANALYTICS ----- -->
+    <script defer data-domain="yosola.co" src="https://plausible.io/js/script.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTDXX5NWH2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-RTDXX5NWH2');
+    </script>
+
+    <!-- ----- STRUCTURED DATA ----- -->
+    <script type="application/ld+json">
+    [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.yosola.co/" },
+        { "@type": "ListItem", "position": 2, "name": "Chat", "item": "https://www.yosola.co/chat/" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Ask Me Anything Chatbot",
+      "url": "https://www.yosola.co/chat/",
+      "dateModified": "2026-09-09",
+      "author": {
+        "@type": "Person",
+        "name": "Cristina Rodriguez",
+        "url": "https://www.yosola.co/"
+      },
+            "description": "An interactive AI assistant that answers questions about Cristina Rodriguez's professional journey, technical skills and project experience.",
+      "about": { "@type": "Person", "name": "Cristina Rodriguez", "url": "https://www.yosola.co/" }
+    }
+    ]
+    </script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <nav class="nav">
+        <div class="nav-inner">
+            <a class="nav-logo" href="/">~/cristina-rodriguez</a>
+
+            <button class="nav-toggle" type="button" id="nav-toggle"
+                    aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                        <li><a href="/">home</a></li>
+                        <li><a href="/about/">about</a></li>
+                        <li><a href="/ventures/">ventures</a></li>
+                        <li><a href="/projects/">projects</a></li>
+                        <li><a href="/teaching/">teaching</a></li>
+                        <li><a href="/certifications/">certifications</a></li>
+                        <li><a href="/chat/" aria-current="page">chat</a></li>
+                </ul>
+                <a class="nav-cv" href="/docs/cristina-rodriguez-cv-engineering-2026.pdf" target="_blank" rel="noopener">download-cv</a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main">
+        <section class="hero">
+            <div class="shell">
+                <div class="hero-grid hero-grid--wide">
+                    <div>
+                    <p class="cmd" data-reveal>ask-me-anything</p>
+                    <h1 class="hero-title" data-reveal>ask a bot<br>about my<br><span class="typedText" data-strings="career|projects|technical skills"></span><span class="cursor">_</span></h1>
+                    <p class="hero-body" data-reveal>An interactive AI assistant that knows about my professional journey, technical skills and project experience. Ask it about my background in software development, curriculum design, or any of my projects. Built with Hugging Face Transformers.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="shell">
+                <div class="cmd-row" data-reveal>
+                    <h2 class="cmd">ask-me-anything</h2>
+                    <a class="link-arrow" href="https://huggingface.co/spaces/ECRodriguez/career_chatbot" target="_blank" rel="noopener">view on hugging face &rarr;</a>
+                </div>
+
+                <div class="tags" data-reveal>
+                    <span>AI/ML</span>
+                    <span>NLP</span>
+                    <span>Hugging Face</span>
+                    <span>Python</span>
+                    <span>Transformers</span>
+                </div>
+
+                <div class="chat-frame" data-reveal data-src="https://hf.co/embed/ECRodriguez/career_chatbot">
+                    <div class="chat-placeholder" id="chat-placeholder">
+                        <p class="chat-placeholder-text">The assistant runs on Hugging Face and opens in an embedded frame.</p>
+                        <button class="btn btn-primary" type="button" id="chat-start">./start-chat.sh</button>
+                        <p class="chat-note">Loads on demand &mdash; nothing is sent to Hugging Face until you start it.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="shell">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand-col">
+                    <a class="footer-brand" href="/">~/cristina-rodriguez</a>
+                    <p class="footer-tagline">
+                        <a href="https://www.comadrelab.dev/" target="_blank" rel="noopener">comadrelab &middot; comadrelab.dev</a>
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <p class="footer-heading">site/</p>
+                    <ul>
+                        <li><a href="/">home</a></li>
+                        <li><a href="/about/">about</a></li>
+                        <li><a href="/ventures/">ventures</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <p class="footer-heading">work/</p>
+                    <ul>
+                        <li><a href="/projects/">projects</a></li>
+                        <li><a href="/teaching/">teaching</a></li>
+                        <li><a href="/certifications/">certifications</a></li>
+                        <li><a href="/chat/">chat</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-col" style="margin-bottom:40px;">
+                <p class="footer-heading">elsewhere/</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/crissrodriguez/" target="_blank" rel="noopener">linkedin</a></li>
+                    <li><a href="https://github.com/Yosolita1978" target="_blank" rel="noopener">github</a></li>
+                    <li><a href="https://www.youtube.com/@crissrodriguez9940/videos" target="_blank" rel="noopener">youtube</a></li>
+                    <li><a href="https://play.google.com/store/apps/developer?id=yosola" target="_blank" rel="noopener">google play</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright &copy; Cristina Rodriguez 2026 &mdash; All rights reserved</p>
+                <p><a href="mailto:yosola@gmail.com">yosola@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ----- LIBRARIES (the hero animation) ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- SITE SCRIPTS ----- -->
+    <script src="/js/nav.js"></script>
+    <script src="/js/hero.js"></script>
+    <script src="/js/chat.js"></script>
+</body>
+
+</html>
