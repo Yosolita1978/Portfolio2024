@@ -327,6 +327,33 @@
     .skill-row { grid-template-columns: 1fr; gap: 6px; }
 }
 
+/* ----- FAQ ----- */
+.faq-list {
+    max-width: 78ch;
+    border-top: 1px solid var(--border);
+}
+.faq-item {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+}
+.faq-q {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.6;
+    margin: 0 0 10px;
+}
+.faq-q::before {
+    content: '? ';
+    color: var(--accent);
+}
+.faq-a {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.9;
+    margin: 0;
+}
+
 /* ============================================================
    404
    ============================================================ */
