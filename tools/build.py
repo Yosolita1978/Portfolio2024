@@ -19,7 +19,8 @@ WHAT IT IS NOT
 WHAT IT OVERWRITES
     index.html, 404.html, sitemap.xml, robots.txt, and index.html inside
     about/ ventures/ projects/ teaching/ certifications/ chat/.
-    It does NOT touch css/, js/, images/, docs/, ascii/ or podfic/.
+    It does NOT touch css/, js/, images/, docs/, ascii/, podfic/,
+    llms-full.txt or cristina.md (those last two are hand-maintained).
     Edit page CONTENT here, then re-run. Edit STYLES in css/ directly.
 """
 
@@ -150,6 +151,7 @@ PAGE = """<!DOCTYPE html>
     <title>{title}</title>
     <meta name="description" content="{description}">
     <link rel="canonical" href="{canonical}">
+    <link rel="alternate" type="text/markdown" href="/cristina.md" title="Cristina Rodriguez, profile for AI agents">
 {robots}
     <!-- ----- OPEN GRAPH ----- -->
     <meta property="og:type" content="{og_type}">
@@ -1383,7 +1385,8 @@ Email: yosola@gmail.com
 
 ## More Context
 For detailed information, see: %s/llms-full.txt
-""" % (SITE, llms_pages, llms_projects, SITE))
+Profile for AI agents, with rules for using it: %s/cristina.md
+""" % (SITE, llms_pages, llms_projects, SITE, SITE))
 
 
 # ============================================================

@@ -39,3 +39,4 @@ Email: yosola@gmail.com
 
 ## More Context
 For detailed information, see: https://www.yosola.co/llms-full.txt
+Profile for AI agents, with rules for using it: https://www.yosola.co/cristina.md
