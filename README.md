@@ -32,27 +32,31 @@ js/nav.js               mobile menu
 js/hero.js              the typing effect + scroll reveal (shared by every page)
 js/chat.js              click-to-load for the Hugging Face embed
 
-images/  docs/  ascii/  podfic/     unchanged, not generated
+cristina.md             /cristina.md      profile for AI agents (Markdown)
+
+images/  docs/  ascii/  podfic/
 ```
 
 ## Editing pages
 
-The nav bar and footer are repeated in all eight HTML files, because plain
-HTML has no way to share them. So they are generated from one source:
+The HTML files are the source of truth. Edit them directly, then commit and
+push; Amplify serves whatever is in the repo. Edit **styles** in `css/`.
 
-```
-python3 tools/build.py
-```
+The nav bar, footer and most of `<head>` are repeated in all eight HTML files
+(the seven `index.html` pages plus `404.html`), because plain HTML has no way
+to share them. A change to any of those means updating every file.
 
-Edit page **content** in `tools/build.py`, then re-run it. Edit **styles** in
-`css/` directly — the generator never touches those.
+These are also edited by hand:
 
-`tools/build.py` overwrites the eight `index.html` files plus `404.html`,
-`sitemap.xml` and `robots.txt`. It does not touch `css/`, `js/`, `images/`,
-`docs/`, `ascii/` or `podfic/`.
+- `cristina.md`: profile for AI agents, linked from every page's `<head>` and
+  from `llms.txt`. When you change it, update the "Last updated" date between
+  the `last-modified` markers.
+- `llms.txt` and `llms-full.txt`: summaries for AI crawlers.
+- `sitemap.xml` and `robots.txt`: update `sitemap.xml` when a page is added
+  or removed.
 
-The site does not need Python to run or deploy. The generator is only there
-so the shared nav and footer stay in sync.
+There used to be a generator, `tools/build.py`. It was removed because it got
+out of sync with the HTML; it is still in the git history.
 
 ## Hosting
 
